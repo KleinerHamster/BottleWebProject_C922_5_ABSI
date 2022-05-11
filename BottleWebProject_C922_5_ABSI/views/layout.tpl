@@ -10,34 +10,29 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Application name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+          <!-- отображение лого сайта -->
+          <img src="static\images\home\logo.png" alt="logo" style="width:75px;height:24px;">
+          </a>
         </div>
-    </div>
+        <!-- отображение кнопок-ссылок основного меню -->
+        <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="/home">Homepage</a></li><!-- кнопка-ссылка домой -->
+            <li><a class="navbar-brand" href="/about">About</a></li><!-- кнопка-ссылка домой -->
+        </ul>
+      </div>
+    </nav>
 
+    <!-- отображение внизу компании -->
     <div class="container body-content">
         {{!base}}
-        <hr />
         <footer>
-            <p>&copy; {{ year }} - My Bottle Application</p>
+            <p14>&copy; {{ year }} - KVAS Corporation</p14>
         </footer>
     </div>
-
     <script src="/static/scripts/jquery-1.10.2.js"></script>
     <script src="/static/scripts/bootstrap.js"></script>
     <script src="/static/scripts/respond.js"></script>

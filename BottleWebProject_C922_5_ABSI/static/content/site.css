@@ -1,6 +1,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #dcdcdc;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -39,4 +40,25 @@ input[type="checkbox"].input-validation-error {
 
 .validation-summary-valid {
     display: none;
+}
+
+/*Кастомный вид меню сверху*/
+.navbar-custom {
+    background-color: #cdb79e; /*Цвет меню*/
+}
+    /*Дополнения к кастомному виду меню сверху*/
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: black; /*Цвет шрифта*/
+        font-family: Verdana; /*Шрифт*/
+        padding: 16px 26px; /*Внутрение отступы для текста*/
+        font-size: 24px; /*Гегель шрифта*/
+    }
+header1 {
+    font-family: Verdana; /*Шрифт*/
+    padding: 16px 26px; /*Внутрение отступы для текста*/
+    font-size: 38px; /*Гегель шрифта*/
+    padding: 16px 26px; /*Внутрение отступы для текста*/
+    /*font-weight:bold;*/
+    color: black;
 }
