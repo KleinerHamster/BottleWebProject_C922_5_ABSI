@@ -1,5 +1,7 @@
 % rebase('layout.tpl', title=title, year=year)
 
+<header1>Evaluation of the reliability of the simplest systems by the Monte Carlo method</header1>
+
 <h2>{{ title }}.</h2>
 <h3>{{ message }}</h3>
 
