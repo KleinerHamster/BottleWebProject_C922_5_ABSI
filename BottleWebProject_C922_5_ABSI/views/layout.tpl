@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
 </head>
 
 <body>
@@ -18,10 +19,12 @@
           <img src="static\images\home\logo.png" alt="logo" style="width:75px;height:24px;">
           </a>
         </div>
+
         <!-- отображение кнопок-ссылок основного меню -->
         <ul class="nav navbar-nav">
             <li><a class="navbar-brand" href="/home">Homepage</a></li><!-- кнопка-ссылка домой -->
-             <li><a class="navbar-brand" href="/contact">Anya</a></li><!-- кнопка-ссылка домой -->
+            <li><a class="navbar-brand" href="/contact">Anya</a></li><!-- кнопка-ссылка домой -->
+            <li><a class="navbar-brand" href="/sonya">Sonya</a></li><!-- кнопка-ссылка домой -->
             <li><a class="navbar-brand" href="/about">About</a></li><!-- кнопка-ссылка домой -->
         </ul>
       </div>
