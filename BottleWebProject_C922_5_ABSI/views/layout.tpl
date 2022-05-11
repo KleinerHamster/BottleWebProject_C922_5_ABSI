@@ -21,6 +21,7 @@
         <!-- отображение кнопок-ссылок основного меню -->
         <ul class="nav navbar-nav">
             <li><a class="navbar-brand" href="/home">Homepage</a></li><!-- кнопка-ссылка домой -->
+             <li><a class="navbar-brand" href="/contact">Anya</a></li><!-- кнопка-ссылка домой -->
             <li><a class="navbar-brand" href="/about">About</a></li><!-- кнопка-ссылка домой -->
         </ul>
       </div>
