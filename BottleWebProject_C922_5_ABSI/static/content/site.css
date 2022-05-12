@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fdfff5;
+    background-color: white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -44,18 +44,117 @@ input[type="checkbox"].input-validation-error {
 
 /*Кастомный вид меню сверху*/
 .navbar-custom {
-    background-color: #87cefa; /*Цвет меню*/
+    background-color: #ee82ab; /*Цвет меню*/
 }
-    /*Дополнения к кастомному виду меню сверху*/
-    .navbar-custom .navbar-brand,
-    .navbar-custom .navbar-text {
-        color: black; /*Цвет шрифта*/
-        font-family: Verdana; /*Шрифт*/
-        padding: 16px 26px; /*Внутрение отступы для текста*/
-        font-size: 24px; /*Гегель шрифта*/
+/*Дополнения к кастомному виду меню сверху*/
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black; /*Цвет шрифта*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    padding: 16px 26px; /*Внутрение отступы для текста*/
+    font-size: 28px; /*Гегель шрифта*/
+}
+
+/*Визуально указываем на выбранный объект */
+.navbar-custom .navbar-brand:hover {
+    background-color: #d82f88; /*Цвет меню*/
+}
+
+/*размещение эл-тов по блокам*/
+conteinerForText {
+    display: flex; /*горизонтально*/
+}
+
+/*делиметр*/
+delimeterPerson {
+    width: 10%;
+}
+
+/*разделяет страницу на части*/
+separateForText {
+    width: 50%;
+}
+
+/*элемент визуального разделения*/
+hr {
+    border: none;
+    border-top: 3px double #d82f88; /*цвет линий*/
+    color: #d82f88; /*цвет текста*/
+    overflow: visible;
+    text-align: center; /*Выравнивание по центру*/
+    height: 5px;
+}
+
+    hr:after {
+        background: #fff; /*фон*/
+        content: 'KVAS'; /*надпись*/
+        padding: 0 4px; /*внутрение отступы*/
+        position: relative; /*цвет текста*/
+        top: -13px;
     }
+
+
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 200px; /*ширина*/
+    height: 200px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait img {
+        width: 100%;
+        height: auto;
+    }
+
+/*Стиль шрифта заголовка страницы about*/
+headerAbout {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 120pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+/*Стиль шрифта заголовка абзаца страницы about*/
+headerParagraphAbout {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+/*Стиль шрифта основного текста страницы about*/
+pAbout {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    font-size: 18px; /*Гегель шрифта*/
+    color: black; /*Цвет шрифта*/
+}
+/*Стиль шрифта отображения вниху KVAS*/
+pEnd {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 16px; /*Гегель шрифта*/
+    color: #ee82ab; /*Цвет шрифта*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+
+
+
 header1 {
-    font-family: Verdana;
+    font-family: VCR OSD Mono,monospace;
     font-size: 38px;
     color: black;
     text-align: center;

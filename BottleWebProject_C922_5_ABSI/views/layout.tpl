@@ -16,16 +16,21 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="/">
           <!-- отображение лого сайта -->
-          <img src="static\images\home\logo.png" alt="logo" style="width:75px;height:24px;">
+           <img src="static\images\home\logo.png" alt="logo" style="width:80px;height:28px;">
           </a>
         </div>
-
         <!-- отображение кнопок-ссылок основного меню -->
         <ul class="nav navbar-nav">
             <li><a class="navbar-brand" href="/home">Homepage</a></li><!-- кнопка-ссылка домой -->
+
+
             <li><a class="navbar-brand" href="/contact">Anya</a></li><!-- кнопка-ссылка домой -->
+            <li><a class="navbar-brand" href="/vi">Vi</a></li><!-- кнопка-ссылка домой -->
             <li><a class="navbar-brand" href="/sonya">Sonya</a></li><!-- кнопка-ссылка домой -->
-            <li><a class="navbar-brand" href="/about">About</a></li><!-- кнопка-ссылка домой -->
+            <li><a class="navbar-brand" href="/kama">Kama</a></li><!-- кнопка-ссылка домой -->
+
+            <li><a class="navbar-brand" href="/about">About us</a></li><!-- кнопка-ссылка на страцу об авторах -->
+            
         </ul>
       </div>
     </nav>
@@ -34,7 +39,7 @@
     <div class="container body-content">
         {{!base}}
         <footer>
-            <p14>&copy; {{ year }} - KVAS Corporation</p14>
+            <pEnd>&copy; {{ year }} - KVAS Corporation</pEnd>
         </footer>
     </div>
     <script src="/static/scripts/jquery-1.10.2.js"></script>

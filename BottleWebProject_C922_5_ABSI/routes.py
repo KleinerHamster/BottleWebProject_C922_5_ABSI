@@ -40,3 +40,21 @@ def about():
     return dict(
         year=datetime.now().year
     )
+
+@route('/kama')
+@view('kama')
+def about():
+    """Renders the about page."""
+    return dict(
+        title='About',
+        message='Your application description page.',
+        year=datetime.now().year
+    )
+@route('/vi')
+@view('vi')
+def about():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )
+
