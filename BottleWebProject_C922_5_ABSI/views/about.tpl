@@ -18,11 +18,11 @@
         <headerParagraphAbout>Kamilla Balaeva/Kama</headerParagraphAbout>
 
         <!--Разделяем на абзацы-->
-        <hr>
+        <hr class="about">
         </hr>
 
         <!--Добавляем фото творца проекта-->
-        <div class="circular--portrait"> <img src="static\images\about\IMG_2915.JPG" /> </div>
+        <div class="circular--portrait"> <img src="static\images\about\kama.jpeg" /> </div>
         <!--Основной текст об авторе-->
         <pAbout>
             ThingWorx Mashup Builder with drag and drop function allows
@@ -52,11 +52,11 @@
         <headerParagraphAbout>Victoria Ivashova/Baby Vi</headerParagraphAbout>
 
         <!--Разделяем на абзацы-->
-        <hr>
+        <hr class="about">
         </hr>
 
         <!--Добавляем фото творца проекта-->
-        <div class="circular--portrait"> <img src="static\images\about\IMG_2915.JPG" /> </div>
+        <div class="circular--portrait"> <img src="static\images\about\vi.JPG" /> </div>
 
          <!--Основной текст об авторе-->
         <pAbout>
@@ -81,11 +81,11 @@
         <headerParagraphAbout>Anya Alexseeva/Yesenin</headerParagraphAbout>
 
         <!--Разделяем на абзацы-->
-        <hr>
+        <hr class="about">
         </hr>
 
         <!--Добавляем фото творца проекта-->
-        <div class="circular--portrait"> <img src="static\images\about\IMG_2915.JPG" /> </div>
+        <div class="circular--portrait"> <img src="static\images\about\anya.jpeg" /> </div>
 
          <!--Основной текст об авторе-->
         <pAbout>
@@ -115,11 +115,11 @@
         <headerParagraphAbout>Sofia Snegova/Little Backer</headerParagraphAbout>
 
         <!--Разделяем на абзацы-->
-        <hr>
+        <hr class="about">
         </hr>
 
         <!--Добавляем фото творца проекта-->
-        <div class="circular--portrait"> <img src="static\images\about\IMG_2915.JPG" /> </div>
+        <div class="circular--portrait"> <img src="static\images\about\sonya.jpeg" /> </div>
 
         <!--Основной текст об авторе-->
         <pAbout>

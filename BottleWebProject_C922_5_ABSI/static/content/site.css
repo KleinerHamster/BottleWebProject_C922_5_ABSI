@@ -75,25 +75,6 @@ separateForText {
     width: 50%;
 }
 
-/*элемент визуального разделения*/
-hr {
-    border: none;
-    border-top: 3px double #d82f88; /*цвет линий*/
-    color: #d82f88; /*цвет текста*/
-    overflow: visible;
-    text-align: center; /*Выравнивание по центру*/
-    height: 5px;
-}
-
-    hr:after {
-        background: #fff; /*фон*/
-        content: 'KVAS'; /*надпись*/
-        padding: 0 4px; /*внутрение отступы*/
-        position: relative; /*цвет текста*/
-        top: -13px;
-    }
-
-
 /*Стиль для вставки фотографий творцов проекта*/
 .circular--portrait {
     float: left; /*расположение слева*/
@@ -109,7 +90,36 @@ hr {
         width: 100%;
         height: auto;
     }
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait3 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 200px; /*ширина*/
+    height: 200px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
 
+    .circular--portrait3 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait4 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 25%; /*Закругляем края*/
+    margin: 5px; /*Внешние отступы*/
+}
+
+    .circular--portrait4 img {
+        width: 100%;
+        height: auto;
+    }
 /*Стиль шрифта заголовка страницы about*/
 headerAbout {
     font-family: VCR OSD Mono,monospace; /*Шрифт*/
@@ -152,6 +162,255 @@ pEnd {
 
 
 
+/*Стиль шрифта заголовка страницы about*/
+headerHP1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 48pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+}
+
+/*Стиль шрифта заголовка страницы about*/
+headerHP2 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 32pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: left; /*Размещаем текст по ширине*/
+}
+
+h1.new {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 32pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: right; /*Размещаем текст по центру*/
+
+}
+/*Стиль шрифта небольшого вступления*/
+pHP1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24px; /*Гегель шрифта*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+}
+
+/*Стиль шрифта заголовка страницы about*/
+headerAbout2 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 80pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: left; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portrait1 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 500px; /*ширина*/
+    height: 500px; /*высота*/
+    overflow: hidden;
+    border-radius: 25%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait1 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portrait2 {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 15%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait2 img {
+        width: 100%;
+        height: auto;
+    }
+/*Вид кнопки .buttonHP*/
+.buttonHP {
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 500px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonHP:hover {
+        background-color: #d82f88; /*Цвет заднего фота*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+    /*Шрифт заголовков*/
+    .popup h1 {
+        margin-top: 0;
+        color: #bb64a1; /*Цвет шрифта*/
+        font-size: 48px; /*Гегель шрифта*/
+        text-align: center; /*Размещаем текст по центру*/
+        font-weight: bold; /* Полужирный*/
+        font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    }
+    /*Шрифт основного текста*/
+    .popup p1 {
+        margin-top: 0;
+        color: black; /*Цвет шрифта*/
+        font-size: 24px; /*Гегель шрифта*/
+        text-align: justify; /*Размещаем текст по ширине*/
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    }
+
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .popup .close:hover {
+            color: #d82f88; /*Цвет на крестик*/
+        }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+
+/*элемент визуального разделения*/
+hr {
+    border: none;
+    border-top: 3px double #d82f88; /*цвет линий*/
+    color: #d82f88; /*цвет текста*/
+    overflow: visible;
+    text-align: center; /*Выравнивание по центру*/
+    height: 5px;
+}
+
+/*элемент визуального разделения*/
+hr.about {
+    border: none;
+    border-top: 3px double #d82f88; /*цвет линий*/
+    color: #d82f88; /*цвет текста*/
+    overflow: visible;
+    text-align: center; /*Выравнивание по центру*/
+    height: 5px;
+}
+
+    hr.about:after {
+        background: #fff; /*фон*/
+        content: 'KVAS'; /*надпись*/
+        padding: 0 4px; /*внутрение отступы*/
+        position: relative; /*цвет текста*/
+        top: -13px;
+    }
+/*элемент визуального разделения*/
+hr.new1{
+    border: none;
+    border-top: 3px double #d82f88; /*цвет линий*/
+    color: #d82f88; /*цвет текста*/
+    overflow: visible;
+    text-align:right; /*Выравнивание по центру*/
+    height: 5px;
+}
+
+    hr.new1:after {
+        background: #fff; /*фон*/
+        content: 'KVAS'; /*надпись*/
+        padding: 0 4px; /*внутрение отступы*/
+        position: relative; /*цвет текста*/
+        top: -13px;
+    }
+
+/*элемент для размецения информации*/
+.jumbotron {
+    padding: 200px;
+    margin-bottom: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: black;
+    background: #ee82ab;
+}
+
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.container .jumbotron {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*Шрифт основного текста*/
+pHP{
+    margin-top: 0;
+    color: black; /*Цвет шрифта*/
+    font-size: 24px; /*Гегель шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+}
+
+/*Стиль шрифта заголовка абзаца страницы about*/
+headerParagraph1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 18pt; /*Гегель шрифта*/
+    
+    color: black; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
 
 header1 {
     font-family: VCR OSD Mono,monospace;
