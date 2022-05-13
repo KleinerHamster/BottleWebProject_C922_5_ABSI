@@ -121,8 +121,8 @@
         <!--Основной текст - ссылки на страницы-->
         <headerParagraph1>
             The Monte Carlo Simulation Method for System Reliability and Risk Analysis<br><br>
-            <a class="buttonHP" href="/contact">3-2 thread</a><br><br>
-            <a class="buttonHP" href="/kama">2-3 thread</a>
+            <a class="buttonHP" href="/mcm_system_reliability_3_2">3-2 thread</a><br><br>
+            <a class="buttonHP" href="/mcm_system_reliability_2_3">2-3 thread</a>
         </headerParagraph1> 
         <p><br></p>
       
@@ -145,8 +145,8 @@
         <!--Основной текст - ссылки на страницы-->
         <headerParagraph1>
             Efficient Monte Carlo methods for estimating failure probabilities<br><br>
-            <a class="buttonHP" href="/vi">3 thread</a><br><br>
-            <a class="buttonHP" href="/sonya">4 thread</a>
+            <a class="buttonHP" href="/mcm_estimating_failure_probilities_3">3 thread</a><br><br>
+            <a class="buttonHP" href="//mcm_estimating_failure_probilities_4">4 thread</a>
         </headerParagraph1> 
         <p><br></p>
     </separateForText>
