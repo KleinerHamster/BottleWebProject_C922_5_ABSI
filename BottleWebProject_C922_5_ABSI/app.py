@@ -6,6 +6,11 @@ import bottle
 import os
 import sys
 
+import program_mcm_2_3_K
+import program_mcm_3_V
+import program_mcm_3_2_A
+import program_mcm_4_S
+
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
 

@@ -22,13 +22,12 @@
         <!-- отображение кнопок-ссылок основного меню -->
         <ul class="nav navbar-nav">
             <li><a class="navbar-brand" href="/home">Simulation modeling</a></li><!-- кнопка-ссылка на главную страницу -->
+            <li><a class="navbar-brand" href="/mcm_system_reliability_3_2" title="System realiability 3 and 2 thread">MCM 3 and 2 tread</a></li><!-- кнопка-ссылка на 3 и 2 канальную ситсему СМО -->
+            
+            <li><a class="navbar-brand" href="/mcm_estimating_failure_probilities_3" title="Estimating failure probilities 3 tread">MCM 3 tread</a></li><!-- кнопка-ссылка на 3 канальную СМО -->
+            <li><a class="navbar-brand" href="/mcm_estimating_failure_probilities_4" title="Estimating failure probilities 4 tread">MCM 4 tread</a></li><!-- кнопка-ссылка на 4 канальную СМОй -->
 
-
-            <li><a class="navbar-brand" href="/contact">Anya</a></li><!-- кнопка-ссылка домой -->
-            <li><a class="navbar-brand" href="/vi">Vi</a></li><!-- кнопка-ссылка домой -->
-            <li><a class="navbar-brand" href="/sonya">Sonya</a></li><!-- кнопка-ссылка домой -->
-            <li><a class="navbar-brand" href="/kama">Kama</a></li><!-- кнопка-ссылка домой -->
-
+            <li><a class="navbar-brand" href="/mcm_system_reliability_2_3" title="System realiability 2 and 3 thread">MCM 3 and 2 tread</a></li><!-- кнопка-ссылка на 2 и 3 канальную ситсему СМО -->
             <li><a class="navbar-brand" href="/about">About us</a></li><!-- кнопка-ссылка на страцу об авторах -->
             
         </ul>
