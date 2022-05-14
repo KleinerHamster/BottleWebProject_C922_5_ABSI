@@ -27,7 +27,7 @@
             <li><a class="navbar-brand" href="/mcm_estimating_failure_probilities_3" title="Estimating failure probilities 3 tread">MCM 3 tread</a></li><!-- кнопка-ссылка на 3 канальную СМО -->
             <li><a class="navbar-brand" href="/mcm_estimating_failure_probilities_4" title="Estimating failure probilities 4 tread">MCM 4 tread</a></li><!-- кнопка-ссылка на 4 канальную СМОй -->
 
-            <li><a class="navbar-brand" href="/mcm_system_reliability_2_3" title="System realiability 2 and 3 thread">MCM 3 and 2 tread</a></li><!-- кнопка-ссылка на 2 и 3 канальную ситсему СМО -->
+            <li><a class="navbar-brand" href="/mcm_system_reliability_2_3" title="System realiability 2 and 3 thread">MCM 2 and 3 tread</a></li><!-- кнопка-ссылка на 2 и 3 канальную ситсему СМО -->
             <li><a class="navbar-brand" href="/about">About us</a></li><!-- кнопка-ссылка на страцу об авторах -->
             
         </ul>
