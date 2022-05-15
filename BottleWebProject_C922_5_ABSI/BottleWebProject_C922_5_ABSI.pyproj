@@ -81,6 +81,7 @@
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v2.jpeg" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v1.png" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v3.png" />
+    <Content Include="static\images\mcm_estimating_failure_probilities_3\v4.png" />
     <Content Include="static\images\mcm_system_reliability_3_2\a1.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />

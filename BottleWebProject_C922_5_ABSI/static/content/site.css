@@ -547,12 +547,12 @@ iframe { /*стиль для ввыода таблиц из excel*/
 .circular--portraitV1 {
     float: left; /*расположение слева*/
     position: relative;
-    width: 400px; /*ширина*/
-    height: 300px; /*высота*/
+    width: 500px; /*ширина*/
+    height: 400px; /*высота*/
     overflow: hidden;
     /*Внешние отступы*/
     margin-right: 100px;
-    
+    margin-bottom:5px;
 }
 
     .circular--portraitV1 img {
@@ -566,7 +566,8 @@ iframe { /*стиль для ввыода таблиц из excel*/
     height: 500px; /*высота*/
     overflow: hidden;
     /*Внешние отступы*/
-    margin-right: 100px;
+    margin-left: 60px;
+    
 }
 
     .circular--portraitV2 img {

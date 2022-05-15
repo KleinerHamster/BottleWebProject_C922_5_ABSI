@@ -32,8 +32,8 @@
     <hr></hr>
     
     <form action="/program_mcm_3_2_A" method="post">
-    <div class="circular--portraitV1"> <img src="static\images\mcm_estimating_failure_probilities_3\v2.jpeg"/> </div>
-
+    <div class="circular--portraitV1"> <img src="static\images\mcm_estimating_failure_probilities_3\v4.png"/> </div>
+    <p><br></p>
         <table class="tbV"><!--Таблица-->
             <tr><!--Шапка таблицы-->
                 <th>t1</th>
@@ -53,6 +53,7 @@
         </headerA1>
         <p><br></p>
         <p><input type="submit" class="buttonV" value="Calculate"></p>
+        <p><br></p>
         <p><br></p>
     </form>
     <!--Разделяем на абзацы-->
