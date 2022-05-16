@@ -1,4 +1,4 @@
-from bottle import post, request
+from bottle import post, request, template
 import pdb 
 import random
 import pandas as pd
@@ -105,13 +105,67 @@ def my_form():
 
     df = pd.DataFrame(columns=['Test number'
                                ,'Block'
-                               ,'Time between two consecutive applications ri=0.2(-ln ri)'
-                               ,'The moment of receipt of the application Ti=T(i-1)+ri'
-                               ,'The moment Ti+0.5 of the end of the application service by the 1 channel','The moment Ti+0.5 of the end of the application service by the 2 channel'
-                               ,'The moment Ti+0.5 of the end of the application service by the 3 channel','The moment Ti+0.5 of the end of the application service by the 4 channel'
-                               'Serviced applications','Bounce rate'])
+                               ,'Random number A'
+                               ,'Random number B'
+                               ,'Random number C'
+                               ,'Random number D'
+                               ,'Random number E'
+                               ,'Element A'
+                               ,'Element B'
+                               ,'Element C'
+                               ,'Element D'
+                               ,'Element E'
+                               ,'Work of blocks'
+                               ,'Work of systems'
+                               ])
+    #df=df.set_index('Test number')
+
+    for number in range(numberOfTests):
+        df=df.append({
+            'Test number':number+1
+            ,'Block':"First"
+            ,'Random number A':list[number].numberA
+            ,'Random number B':list[number].numberB
+            ,'Random number C':list[number].numberC
+            ,'Random number D':""
+            ,'Random number E':""
+            ,'Element A':list[number].resultA
+            ,'Element B':list[number].resultB
+            ,'Element C':list[number].resultC
+            ,'Element D':""
+            ,'Element E':""
+            ,'Work of blocks':list[number].blockOne
+            ,'Work of systems':list[number].systems
+            }, ignore_index=True)
+
+        df=df.append({
+            'Test number':""
+            ,'Block':"Second"
+            ,'Random number A':""
+            ,'Random number B':""
+            ,'Random number C':""
+            ,'Random number D':list[number].numberD
+            ,'Random number E':list[number].numberE
+            ,'Element A':""
+            ,'Element B':""
+            ,'Element C':""
+            ,'Element D':list[number].resultD
+            ,'Element E':list[number].resultE
+            ,'Work of blocks':list[number].blockTwo
+            ,'Work of systems':""
+            }, ignore_index=True)
 
     html=df.to_html()
-    return html
+
+    return template('template_ak'
+                    , p1=12
+                    , A_str=A_str
+                    , B_str=B_str
+                    , C_str=C_str
+                    , D_str=D_str
+                    , E_str=E_str
+                    , html=html)
+
+    #return html
     #return "<p>"+str(numberOfTests)+"</p><p>"+str(A)+"</p><p>"+str(p_star)+"</p><p>"+str(p1)+"</p><p>"+str(p2)+"</p><p>"+str(p)+"</p><p>"+str(p_pStar)+"</p><table border='1'><caption>tabliza razmerov obuvi</caption><tr><th>Russia</th><th>Greate Britain</th><th>Eroupe</th><th>Dlina stupni, sm</th></tr><tr><td>"+str(p)+"</td><td>"+str(p)+"</td><td>36</td><td>23</td></tr></table>"
     
