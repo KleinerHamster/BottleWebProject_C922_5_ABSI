@@ -112,6 +112,9 @@
     <Content Include="views\mcm_estimating_failure_probilities_3.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\template_ak.tpl">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\template_sv.tpl">
       <SubType>Code</SubType>
     </Content>
