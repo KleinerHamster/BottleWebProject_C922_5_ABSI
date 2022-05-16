@@ -30,7 +30,7 @@ def my_form():
     count_1=0
     all_numbers_of_requests_served=[0]*n
     result=0
-    df1=pd.DataFrame(columns=['N test','Requests served'])
+    df1=pd.DataFrame(columns=['xi','Requests served'])
     
 
     df = pd.DataFrame(columns=['N test','Random number ri','-ln ri','Time between two appilications','Moment applying',
@@ -103,7 +103,7 @@ def my_form():
         n1+=1
         ti=0.0
         flag=1
-        df1=df1.append({'N test':n1,'Requests served':all_numbers_of_requests_served[count_1]},ignore_index=True)
+        df1=df1.append({'xi':n1,'Requests served':all_numbers_of_requests_served[count_1]},ignore_index=True)
         count_1+=1
         
         
