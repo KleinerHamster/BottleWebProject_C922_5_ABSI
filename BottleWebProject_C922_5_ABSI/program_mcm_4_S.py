@@ -5,6 +5,7 @@ import random, math
 @post('/mcm_estimating_failure_probilities_4', method='post')
 def my_form():
 
+    # adding comments
     t1 = request.forms.get('t1')
 
     t2=request.forms.get('t2')
