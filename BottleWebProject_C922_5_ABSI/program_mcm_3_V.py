@@ -5,7 +5,6 @@ import random, math
 
 @post('/mcm_estimating_failure_probilities_3', method='post')
 def my_form():
-
     # время обслуживания заявки
     t1 = request.forms.get('NUMBER_t1')
     # время, за которое нужно обслужить заявки
