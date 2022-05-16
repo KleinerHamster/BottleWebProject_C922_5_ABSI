@@ -11,7 +11,7 @@ def my_form():
     t2=request.forms.get('NUMBER_t2')
     # параметр распределения показательного закона
     a=request.forms.get('NUMBER_a')
-    # количество проведенных испытаний
+    # количество проведенных испытании
     n=request.forms.get('NUMBER_N')
 
     # перевод из строки в числа
@@ -45,11 +45,11 @@ def my_form():
                  
     while n>0:
         while ti<t2:
-            # случайное число
+            # случаиное число
             random_number=random.uniform(0,1) 
             # нахождение -ln random_number
             convert_number_to_ln=-math.log(random_number)
-            # длительность времени между двумя последовательными заявками с номерами i-1 и i
+            # длителность времени между двумя последовательными заявками с номерами i-1 и i
             ri=(1/a)*convert_number_to_ln
             # момент поступления заявки
             ti+=ri
