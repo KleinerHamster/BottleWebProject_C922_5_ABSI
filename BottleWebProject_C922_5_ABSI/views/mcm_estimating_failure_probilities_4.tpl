@@ -10,26 +10,37 @@
     <!--Разделяем на абзацы-->
     <hr></hr>
 </div>
-
+<!--Блок задания-->
+<div>
+    <headerA1>Task:</headerA1>
+    <!--Основной текст ждя задачи-->
+    <pHP>A four thread queuing system for estimating failure probabilities. The time between the receipt of two consecutive applications is 
+    distributed according to the exponential law:$${f(\tau) = \alpha*e^{-\alpha\tau}}$$ 
+    The service duration of each application is equal to t1 min. Find by the Monte Carlo method 
+    the mathematical expectation of the number of applications served during the time T = t2 hours.</pHP>
+    <p><br></p>
+    <!--Разделяем на абзацы-->
+    <hr></hr>
+ </div>
 
 <form action="/mcm_estimating_failure_probilities_4" method="post">
         <!--Изображене слева-->
         <div class="circular--portraitA"> <img src="static\images\mcm_estimating_failure_probilities_4\s1.png"/> </div>
         <br><headerA1>Input:<br>
         <!-- добавляем поле для ввода параметра t1 (длительность обслуживания каждой заявки), используя паттерн--> 
-        t1: <input class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters!')" 
+        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавляем поле для ввода параметра t2 (за какое время будет обслужены заявки), используя паттерн-->
-         t2: <input class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters!')" 
+         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- добавляем поле для ввода араметра a (параметр распределения показательного закона), используя паттерн-->
-        a : <input class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters!')" 
+        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавляем поле для ввода параметра n (количество проведенных испытаний), используя паттерн-->
-         n : <input class="V" type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters!')" 
+         n : <input title ="Count of tests" class="V" type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- кнопка для отправки-->

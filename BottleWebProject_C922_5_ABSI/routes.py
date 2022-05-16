@@ -101,3 +101,10 @@ def about():
     return dict(
         year=datetime.now().year
     )
+@route('/template_ak')
+@view('template_ak')
+def about():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )

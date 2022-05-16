@@ -8,8 +8,10 @@
     <hr >
     </hr>
 </div>
+<!--Количество проведенных тестов-->
+<headerHP2>Number of tests: {{N_str}}</headerHP2>
+<table class="tbV"><!--Таблица -->
 
-<table class="tbV"><!--Таблица-->
     <caption><headerHP2>Probabilities of elements:</headerHP2></caption>
     <tr><!--Шапка таблицы-->
         <th>A</th>
@@ -27,7 +29,6 @@
     </tr>
 </table>
 
-<headerHP2>Number of tests: {{N_str}}</headerHP2>
 
 <hr></hr>
 
@@ -49,7 +50,12 @@
     </tr>
 </table>
 
-<hr></hr>
+<!--Разделяем на абзацы-->
+    <hr></hr>
+	<headerA1>Would you like to back? <a class="buttonV1" href="/mcm_system_reliability_3_2">Back</a></headerA1><br><br>
+	<!--Разделяем на абзацы-->
+    <hr></hr>
+
 
 <headerHP2>Test results:</headerHP2>
 

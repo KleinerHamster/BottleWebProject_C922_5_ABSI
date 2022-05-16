@@ -12,6 +12,18 @@
     <hr >
     </hr>
 </div>
+<!--Блок задания-->
+<div>
+    <headerA1>Task:</headerA1>
+    <!--Основной текст ждя задачи-->
+    <pHP>The system consists of two blocks connected in series. The system fails if at least one block fails. The first block contains three elements: A, B, C, 
+    and the second - two elements: D, E. The elements of each block are connected in parallel. The block fails when all the elements included in it fail simultaneously. 
+    The probabilities of failure-free operation of elements P(A), P(B), P(C), P(D), P(E) are entered by the user.After performing 100 tests, use the Monte Carlo method 
+    to find the estimate P* of the system reliability. Find the absolute error |P*-P|, where P is the reliability of the system calculated analytically.</pHP>
+    <p><br></p>
+    <!--Разделяем на абзацы-->
+    <hr></hr>
+ </div>
 
 <form action="/program_mcm_3_2_A" method="post">
     <!--Изображене слева-->
