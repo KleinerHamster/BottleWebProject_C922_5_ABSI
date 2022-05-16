@@ -1,4 +1,4 @@
-from bottle import post, request
+from bottle import post, request, template
 import pandas as pd
 import random, math
 
@@ -117,18 +117,23 @@ def my_form():
         all_numbers_of_requests_served[count_1]=number_of_requests_served
         n-=1
         count_1+=1
-
+        ti=0
+        
+    df1=pd.DataFrame(columns=['Count of tests', 'Result'])
 
     for i in range(len(all_numbers_of_requests_served)):
+        df1=df1.append({'Count of tests':i+1, 'Result':all_numbers_of_requests_served[i]}, ignore_index=True)
         result+=all_numbers_of_requests_served[i]
 
 
     result/=len(all_numbers_of_requests_served)
 
+    html_table_of_test=df1.to_html()
+
     html=df.to_html()
 
-    return html
-
+    return template('template_sv', number_mcm=4, time=t2, total_count=n, number_of_requests_served=all_numbers_of_requests_served[0],
+                    all_tests=n, result=round(result,3), html1=html_table_of_test, button_back='\mcm_estimating_failure_probilities_4',html=html)
 
 
 
