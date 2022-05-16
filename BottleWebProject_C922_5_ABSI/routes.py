@@ -94,3 +94,10 @@ def about():
         title='Estimating failure probilities 4 tread',
         year=datetime.now().year
     )
+@route('/template_sv')
+@view('template_sv')
+def about():
+    """Renders the about page."""
+    return dict(
+        year=datetime.now().year
+    )

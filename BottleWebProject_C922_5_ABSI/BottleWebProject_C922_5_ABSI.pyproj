@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,6 +78,7 @@
     <Content Include="static\images\home\logo.png" />
     <Content Include="static\images\home\4.png" />
     <Content Include="static\images\home\7.jpeg" />
+    <Content Include="static\images\mcm_estimating_failure_probilities_3\tm1.png" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v2.jpeg" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v1.png" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v3.png" />
@@ -109,6 +110,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\mcm_estimating_failure_probilities_3.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\template_sv.tpl">
       <SubType>Code</SubType>
     </Content>
   </ItemGroup>

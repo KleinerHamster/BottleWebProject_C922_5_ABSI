@@ -519,6 +519,9 @@ iframe { /*стиль для ввыода таблиц из excel*/
     border-color: #ee82ab; /*Цвет границы*/
     font-family: VCR OSD Mono,monospace; /*Шрифт*/
     text-decoration: none;
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
 }
     /*Вид кнопки при нажатии .buttonHP*/
     .buttonV:hover {
@@ -527,8 +530,28 @@ iframe { /*стиль для ввыода таблиц из excel*/
         color: black; /*Цвет шрифта*/
         text-decoration: none;
     }
+.buttonV1 {
+    float: right;
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 550px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonV1:hover {
+        background-color: #d82f88; /*Цвет заднего фона*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
 .tbV { /*стиль таблицы*/
     border-collapse: collapse;
+    margin: auto;
 }
 
     .tbV th, .tbV td { /*стиль для заголовка и ячеек*/
@@ -542,6 +565,18 @@ iframe { /*стиль для ввыода таблиц из excel*/
         background-color: #ee82ab; /*Цвет заднего фона*/
         text-align: center; /*текст по центру*/
     }
+/*Стиль шрифта заголовка страницы mcm_3_2t*/
+headerV1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Текст по ширине*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
 
 /*Стиль для вставки фотографий слева проекта*/
 .circular--portraitV1 {
@@ -569,11 +604,59 @@ iframe { /*стиль для ввыода таблиц из excel*/
     margin-left: 60px;
     
 }
-
     .circular--portraitV2 img {
         width: 100%;
         height: auto;
     }
+
+
+table { /*стиль таблицы*/
+    /*стиль границ*/
+    border: 2px solid #bb64a1;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px; /*Внутрение отступы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 16pt; /*Гегель шрифта*/
+    border: solid 3px #bb64a1;
+    text-align: center; /*текст по центру*/
+}
+th {
+    background-color: #ee82ab; /*Цвет заднего фона*/
+}
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitV2 {
+    position: relative;
+    width: 550px; /*ширина*/
+    height: 500px; /*высота*/
+    overflow: hidden;
+    /*Внешние отступы*/
+    margin-left: 60px;
+}
+
+
+/*Стиль, когда вводим неверное значение*/
+textarea:invalid,
+input:invalid {
+    border: 2px solid #f5dfde; /*Границы стиля*/
+    background: #ea9dbd;
+}
+    /*Стиль, для обязательного заполнения*/
+    input:invalid:required,
+    textarea:invalid:required {
+        border: 2px solid #f5dfde; /*Границы стиля*/
+        color: black; /*Цвет шрифта*/
+        background: #ea9dbd;
+    }
+
+/*Стиль, когда вводим в верном значение*/
+input:valid,
+textarea:valid {
+
+    border: 2px solid #ee82ab; /*Границы стиля*/
+}
+
 header1 {
     font-family: VCR OSD Mono,monospace;
     font-size: 38px;

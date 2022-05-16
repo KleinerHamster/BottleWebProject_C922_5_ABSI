@@ -31,8 +31,8 @@
     <!--Разделяем на абзацы-->
     <hr></hr>
     
-    <form action="/program_mcm_3_2_A" method="post">
-    <div class="circular--portraitV1"> <img src="static\images\mcm_estimating_failure_probilities_3\v4.png"/> </div>
+    <form action="/mcm_estimating_failure_probilities_3" method="post">
+   
     <p><br></p>
         <table class="tbV"><!--Таблица-->
             <tr><!--Шапка таблицы-->
@@ -41,16 +41,16 @@
                 <th>$${\alpha}$$ </th>
             </tr>
             <tr><!--Ячейки для ввода -->
-                <td><input type="text" name="NUMBER_t1" size="10" placeholder="0.5" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input type="text" name="NUMBER_t2" size="10" placeholder="2" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input type="text" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input type="number" step="0.01" size="5" min="0" name="NUMBER_t1" placeholder="0.5" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input type="number" step="0.01" size="5" min="1" name="NUMBER_t2" placeholder="2" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input type="number" step="0.01" size="5" min="0" name="NUMBER_a" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
             </tr>
         </table>
         <br>
-        <headerA1>
-            Number of tests: <!--Ячейка для ввода -->
-            <input type="text" step="0.01" size="5" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
-        </headerA1>
+        <headerV1>
+            Numer of tests: <!--Ячейка для ввода -->
+            <input type="number" step="1" size="5" min="1" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+        </headerV1>
         <p><br></p>
         <p><input type="submit" class="buttonV" value="Calculate"></p>
         <p><br></p>
@@ -79,7 +79,7 @@
     busy servicing the first application, so the second application will arrive in the second and will be serviced by it. The end of the service of the 
     second application is T2+0.5=0.460+0.5=0.960. We add one to the counter of served requests, that why:$${T_{2}+0.5 =0.460+0.5=0.960}$$
     The second random number is 0.09, we go similarly to the second example. By click you can watch a table with a detailed solution.<br><br>
-    <a class="buttonHP" href="#popup1">Table</a><br><br>From the table we find that in 4 minutes a total of 20 applications were received; 
+    <a class="buttonV" href="#popup1">Table</a><br><br>From the table we find that in 4 minutes a total of 20 applications were received; 
     x1 = 12 were served. Let's perform five more tests in the same way, we get: x2 = 15, x3 = 14, x4 = 12, x5 = 13, x6 = 15.As an estimate 
     of the desired mathematical expectation a - the number of applications served, we will take a sample average:
     $${a=\bar{(x)}=\frac{2*12+13+14+2*15}{6}=13.5}$$
