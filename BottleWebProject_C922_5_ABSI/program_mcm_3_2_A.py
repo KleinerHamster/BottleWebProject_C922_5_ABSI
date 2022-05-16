@@ -164,6 +164,7 @@ def my_form():
                     , C_str=C_str
                     , D_str=D_str
                     , E_str=E_str
+                    , N_str=N_str
                     , html=html)
 
     #return html

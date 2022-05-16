@@ -10,7 +10,7 @@
 </div>
 
 <table class="tbV"><!--Таблица-->
-    <caption><headerA1>Probabilities of elements:</headerA1></caption>
+    <caption><headerHP2>Probabilities of elements:</headerHP2></caption>
     <tr><!--Шапка таблицы-->
         <th>A</th>
         <th>B</th>
@@ -27,12 +27,12 @@
     </tr>
 </table>
 
-
+<headerHP2>Number of tests: {{N_str}}</headerHP2>
 
 <hr></hr>
 
 <table class="tbV"><!--Таблица-->
-    <caption><headerA1>Probability of uptime:</headerA1></caption>
+    <caption><headerHP2>Probability of uptime:</headerHP2></caption>
     <tr><!--Шапка таблицы-->
         <th>P*</th>
         <th>P1</th>
@@ -51,7 +51,7 @@
 
 <hr></hr>
 
-<headerA1>Test results:</headerA1>
+<headerHP2>Test results:</headerHP2>
 
 <!--Таблица с первого теста-->
 {{!html}}
