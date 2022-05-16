@@ -7,20 +7,20 @@
 <h3> Input </h3>
 <form action="/mcm_estimating_failure_probilities_4" method="post">
 
-        <!-- добавл€ем текстовое поле дл€ почты, использу€ паттерн-->
-        <p><input type="number" step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters!')" 
+        <!-- добавл€ем поле дл€ ввода параметра t1 (длительность обслуживани€ каждой за€вки), использу€ паттерн--> 
+        <p><input type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters!')" 
         oninput="this.setCustomValidity('')"></p>
 
-        <!-- добавл€ем текстовое поле дл€ почты, использу€ паттерн-->
-        <p><input type="number" step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters!')" 
+        <!-- добавл€ем поле дл€ ввода параметра t2 (за какое врем€ будет обслужены за€вки), использу€ паттерн-->
+        <p><input type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters!')" 
         oninput="this.setCustomValidity('')"></p>
 
-        <!-- добавл€ем текстовое поле дл€ почты, использу€ паттерн-->
-        <p><input type="number" step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters!')" 
+        <!-- добавл€ем поле дл€ ввода араметра a (параметр распределени€ показательного закона), использу€ паттерн-->
+        <p><input type="number" min=0 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters!')" 
         oninput="this.setCustomValidity('')"></p>
 
-        <!-- добавл€ем текстовое поле дл€ почты, использу€ паттерн-->
-        <p><input type="number" size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters!')" 
+        <!-- добавл€ем поле дл€ ввода параметра n (количество проведенных испытаний), использу€ паттерн-->
+        <p><input type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters!')" 
         oninput="this.setCustomValidity('')"></p>
 
         <!-- кнопка дл€ отправки-->
