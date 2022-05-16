@@ -48,7 +48,7 @@
         </table>
         <br>
         <headerV1>
-            Numer of tests: <!--ß÷åéêà äëÿ ââîäà -->
+            Number of tests: <!--ß÷åéêà äëÿ ââîäà -->
             <input type="number" step="1" size="5" min="1" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
         </headerV1>
         <p><br></p>
