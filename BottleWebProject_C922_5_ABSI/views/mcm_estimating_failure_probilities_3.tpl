@@ -41,19 +41,18 @@
                 <th>$${\alpha}$$ </th>
             </tr>
             <tr><!--Ячейки для ввода -->
-                <td><input type="number" step="0.01" size="5" min="0" name="NUMBER_t1" placeholder="0.5" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input type="number" step="0.01" size="5" min="1" name="NUMBER_t2" placeholder="2" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input type="number" step="0.01" size="5" min="0" name="NUMBER_a" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
-            </tr>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t1" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t2" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0.01" step="0.01" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
+           </tr>
         </table>
         <br>
         <headerV1>
             Number of tests: <!--Ячейка для ввода -->
-            <input type="number" step="1" size="5" min="1" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+            <input class="V" type="number" step="1" size="10" min="1" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
         </headerV1>
         <p><br></p>
         <p><input type="submit" class="buttonV" value="Calculate"></p>
-        <p><br></p>
         <p><br></p>
     </form>
     <!--Разделяем на абзацы-->

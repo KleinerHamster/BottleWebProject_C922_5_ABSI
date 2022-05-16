@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env5|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,6 +53,7 @@
     <Folder Include="static\images\about\" />
     <Folder Include="static\images\mcm_system_reliability_3_2\" />
     <Folder Include="static\images\mcm_estimating_failure_probilities_3\" />
+    <Folder Include="static\images\mcm_estimating_failure_probilities_4\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
   </ItemGroup>
@@ -83,6 +84,7 @@
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v1.png" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v3.png" />
     <Content Include="static\images\mcm_estimating_failure_probilities_3\v4.png" />
+    <Content Include="static\images\mcm_estimating_failure_probilities_4\s1.png" />
     <Content Include="static\images\mcm_system_reliability_3_2\a1.png" />
     <Content Include="static\scripts\bootstrap.js" />
     <Content Include="static\scripts\bootstrap.min.js" />
@@ -155,6 +157,15 @@
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env5\">
+      <Id>env5</Id>
+      <Version>3.6</Version>
+      <Description>env5 (Python 3.6 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
     </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>

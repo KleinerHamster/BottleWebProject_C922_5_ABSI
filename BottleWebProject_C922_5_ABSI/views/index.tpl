@@ -146,7 +146,7 @@
         <headerParagraph1>
             Efficient Monte Carlo methods for estimating failure probabilities<br><br>
             <a class="buttonHP" href="/mcm_estimating_failure_probilities_3">3 thread</a><br><br>
-            <a class="buttonHP" href="//mcm_estimating_failure_probilities_4">4 thread</a>
+            <a class="buttonHP" href="/mcm_estimating_failure_probilities_4">4 thread</a>
         </headerParagraph1> 
         <p><br></p>
     </separateForText>

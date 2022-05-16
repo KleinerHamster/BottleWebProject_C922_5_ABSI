@@ -36,7 +36,7 @@
     <br>
     <headerHP2>
         Number of tests: <!--ß÷åéêà äëÿ ââîäà -->
-        <input step="0.01" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+        <input class="A" step="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
     </headerHP2>
     <p><br></p>
     <p><input type="submit" class="buttonA" value="Calculate"></p>
