@@ -38,14 +38,14 @@
         <th>P1</th>
         <th>P2</th>
         <th>P</th>
-        <th>P-P*</th>
+        <th>|P-P*|</th>
     </tr>
     <tr><!--Ячейки для ввода -->
-        <td>{{A_str}}</td>
-        <td>{{B_str}}</td>
-        <td>{{C_str}}</td>
-        <td>{{D_str}}</td>
-        <td>{{E_str}}</td>
+        <td>{{p_star}}</td>
+        <td>{{round(p1, 3)}}</td>
+        <td>{{round(p2, 3)}}</td>
+        <td>{{round(p, 3)}}</td>
+        <td>{{round(p_pStar,3)}}</td>
     </tr>
 </table>
 

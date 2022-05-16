@@ -158,13 +158,17 @@ def my_form():
     html=df.to_html()
 
     return template('template_ak'
-                    , p1=12
                     , A_str=A_str
                     , B_str=B_str
                     , C_str=C_str
                     , D_str=D_str
                     , E_str=E_str
                     , N_str=N_str
+                    , p_star=p_star
+                    , p1=p1
+                    , p2=p2
+                    , p=p
+                    , p_pStar=p_pStar
                     , html=html)
 
     #return html
