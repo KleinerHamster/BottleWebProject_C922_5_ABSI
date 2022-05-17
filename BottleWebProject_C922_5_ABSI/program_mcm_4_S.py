@@ -28,7 +28,7 @@ def my_form():
     count_1=0
     all_numbers_of_requests_served=[0]*n
     result=0
-    total_count=1
+    total_count=0
 
    
     # example to check
@@ -60,7 +60,7 @@ def my_form():
         # if the time of receipt of the application is less than the total time of execution of applications
         while ti<t2:
             # random number
-            random_number=round(random.uniform(0,1),3)
+            random_number=round(random.uniform(0.001,1),3)
             # finding -ln(random_number)
             convert_number_to_ln=round(-math.log(random_number),3)
             # duration of time between two consecutive bids with numbers 
@@ -85,8 +85,10 @@ def my_form():
                         # which channel served the application
                         count_column=i
                     else:
-                        count_column=-1
+                        count_column=-2
                     break
+                elif ti>t2:
+                    count_column=-2
                 else:
                     count_column=-1
 
@@ -136,6 +138,15 @@ def my_form():
                                 'The 4 channel':'',
                                 'Serviced applications':'','Bounce rate':1}, ignore_index=True)     
 
+                elif count_column==-2:
+                    df = df.append({'Random number ri':random_number,'-ln ri':convert_number_to_ln,'Time between two consecutive applications':ri,
+                                'The moment of receipt of the application Ti=T(i-1)+ri':ti,
+                                'The 1 channel':'',
+                                'The 2 channel':'', 
+                                'The 3 channel':'',
+                                'The 4 channel':'',
+                                'Serviced applications':'','Bounce rate':'stop'}, ignore_index=True)     
+
             count+=1
 
         # number of applications served in each trial
@@ -165,6 +176,6 @@ def my_form():
     html=df.to_html()
 
     return template('template_sv', number_mcm=4, time=t2, total_count=total_count, number_of_requests_served=all_numbers_of_requests_served[0],
-                    all_tests=count_of_tests, html1=html_table_of_test, result=round(result,3), button_back='\mcm_estimating_failure_probilities_4',html=html)
+                    all_tests=count_of_tests-1, html1=html_table_of_test, result=round(result,3), button_back='\mcm_estimating_failure_probilities_4',html=html)
 
 
