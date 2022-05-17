@@ -237,6 +237,7 @@ headerAbout2 {
     }
 
 
+/*скрытие элемента*/
 .overlay {
     position: absolute;
     top: 0;
@@ -248,18 +249,18 @@ headerAbout2 {
     visibility: hidden;
     opacity: 0;
 }
-
+    /*появление элемента*/
     .overlay:target {
         visibility: visible;
         opacity: 1;
     }
-
+/*Всплывающиеся окно*/
 .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
+    margin: 70px auto; /*Внешние отступы*/
+    padding: 20px; /*Внутрение отступы*/
+    background: #fff; /*задний фон*/
+    border-radius: 5px; /*закругленные края*/
+    width: 30%; /*ширина*/
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -280,7 +281,7 @@ headerAbout2 {
         text-align: justify; /*Размещаем текст по ширине*/
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
     }
-
+    /*закритие окна*/
     .popup .close {
         position: absolute;
         top: 20px;

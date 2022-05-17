@@ -23,7 +23,7 @@
     <pHP>A three thread queuing system for estimating failure probabilities. The time between the receipt of two consecutive applications is 
     distributed according to the exponential law:$${f(\tau) = \alpha*e^{-\alpha\tau}}$$ 
     The service duration of each application is equal to t1 min. Find by the Monte Carlo method 
-    the mathematical expectation of the number of applications served during the time T = t2 min.And t2>t1</pHP>
+    the mathematical expectation of the number of applications served during the time T = t2 min.</pHP>
     <p><br></p>
     <!--Разделяем на абзацы-->
     <hr></hr>
