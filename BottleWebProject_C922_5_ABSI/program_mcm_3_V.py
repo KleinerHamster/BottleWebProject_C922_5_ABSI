@@ -22,6 +22,9 @@ def my_form():
     n=int(n)
     all_tests=int(n)
 
+    if t1>t2:
+        return "hfhhfhf"
+
     n1=0
     flag=0
     ti=0.0
@@ -115,7 +118,7 @@ def my_form():
         all_numbers_of_requests_served[count_1]=number_of_requests_served+1
         n-=1
         n1+=1
-        ti=0.0
+        ti=0.0 
         flag=1
         # filling in the results table
         df1=df1.append({'xi':n1,'Requests served':all_numbers_of_requests_served[count_1]},ignore_index=True)
