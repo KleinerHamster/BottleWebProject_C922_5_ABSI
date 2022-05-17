@@ -20,7 +20,7 @@
 	<!--Изображение-->
 	<div class="circular--portraitV1"> <img src="static\images\mcm_estimating_failure_probilities_3\v4.png"/> </div>
 	<!--Основной текст-->
-	From the table we find that in {{time}} min a total of {{total_count}} applications were received; x1 = {{number_of_requests_served}} were served. Let's perform 
+	From the table we find that in {{time}} min a total of {{total_count}} applications were received; x1 = {{number_of_requests_served}} was served (or is being served). Let's perform 
 	{{all_tests}} more tests in the same way, we get:<br>{{!html1}}<br><!--Таблица результатов теста-->
 	As an estimate of the desired mathematical expectation a - the number of applications served , we will take a sample average:
 	$${a=\bar{(x)}=\frac{\sum{x_{i}}}{n}}={{result}}$$<br><br>
