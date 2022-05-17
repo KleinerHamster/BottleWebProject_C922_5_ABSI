@@ -29,6 +29,9 @@ def my_form():
     all_numbers_of_requests_served=[0]*n
     result=0
     total_count=1
+
+    if t1>t2:
+        return "hfhhfhf"
     # example to check
     #random_number=[0.1,0.09,0.73,0.25,0.33,0.76,0.52,0.01,0.35,0.86,0.34,0.67,0.35,0.48,0.76,0.8,0.95,0.9,0.91,0.17]
 
@@ -45,6 +48,9 @@ def my_form():
                                     'The 3 channel':'',
                                     'The 4 channel':'',
                                     'Serviced applications':1,'Bounce rate':''}, ignore_index=True)
+    
+    
+    
     # repeated as many times as the user specified          
     while n>0:
         # if the time of receipt of the application is less than the total time of execution of applications

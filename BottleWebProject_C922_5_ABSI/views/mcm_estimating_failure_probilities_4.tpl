@@ -94,6 +94,6 @@
 <br>From the table we find that in 4 minutes a total of 20 applications were received; x1 = 17 were served. 
 <br>Let's perform five more tests in the same way, we get: x2=15, x3=14, x4=17, x5 =13, x6=15.
 <br>As an estimate of the desired mathematical expectation a - the number of applications served, we will take a sample average:
-$${a=\bar{(x)}=\frac{2*12+13+14+2*15}{6}=13.5}$$
+$${a=\bar{(x)}=\frac{2*17+2*15+14+13}{6}=}$$
 result: a=15.2
 </pHP>
