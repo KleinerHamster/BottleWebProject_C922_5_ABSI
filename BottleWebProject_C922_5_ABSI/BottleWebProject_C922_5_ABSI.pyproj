@@ -43,8 +43,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
+    <Compile Include="testing_system\mcm_3_v\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="testing_system\" />
     <Folder Include="static\" />
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
@@ -55,6 +59,10 @@
     <Folder Include="static\images\mcm_estimating_failure_probilities_3\" />
     <Folder Include="static\images\mcm_estimating_failure_probilities_4\" />
     <Folder Include="static\scripts\" />
+    <Folder Include="testing_system\mcm_3_2_a\" />
+    <Folder Include="testing_system\mcm_2_3_k\" />
+    <Folder Include="testing_system\mcm_3_v\" />
+    <Folder Include="testing_system\mcm_4_s\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
