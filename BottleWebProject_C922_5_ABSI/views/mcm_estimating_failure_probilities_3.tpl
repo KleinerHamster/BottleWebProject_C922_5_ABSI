@@ -41,9 +41,9 @@
                 <th>$${\alpha}$$ </th>
             </tr>
             <tr><!--Ячейки для ввода -->
-                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t1" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t2" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input class="V" type="number" min="0.01" step="0.01" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t1" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the first element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t2" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the second element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0.01" step="0.01" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the third element!')" oninput="this.setCustomValidity('')"></td>
            </tr>
         </table>
         <br>

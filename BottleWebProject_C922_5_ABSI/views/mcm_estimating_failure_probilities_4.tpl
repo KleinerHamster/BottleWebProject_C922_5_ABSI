@@ -28,19 +28,19 @@
         <div class="circular--portraitA"> <img src="static\images\mcm_estimating_failure_probilities_4\s1.png"/> </div>
         <br><headerA1>Input:<br>
         <!-- добавл€ем поле дл€ ввода параметра t1 (длительность обслуживани€ каждой за€вки), использу€ паттерн--> 
-        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters!')" 
+        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавл€ем поле дл€ ввода параметра t2 (за какое врем€ будет обслужены за€вки), использу€ паттерн-->
-         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters!')" 
+         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- добавл€ем поле дл€ ввода араметра a (параметр распределени€ показательного закона), использу€ паттерн-->
-        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters!')" 
+        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавл€ем поле дл€ ввода параметра n (количество проведенных испытаний), использу€ паттерн-->
-         n : <input title ="Count of tests" class="V" type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters!')" 
+         n : <input title ="Count of tests" class="V" type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- кнопка дл€ отправки-->

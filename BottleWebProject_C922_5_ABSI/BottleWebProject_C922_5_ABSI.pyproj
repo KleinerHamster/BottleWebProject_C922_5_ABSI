@@ -120,6 +120,9 @@
     <Content Include="views\template_sv.tpl">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\template_sv1.tpl">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
