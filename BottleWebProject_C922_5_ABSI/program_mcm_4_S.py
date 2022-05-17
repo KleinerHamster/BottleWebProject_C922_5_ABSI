@@ -30,16 +30,20 @@ def my_form():
     result=0
     total_count=1
 
-    if t1>t2:
-        return "hfhhfhf"
+   
     # example to check
     #random_number=[0.1,0.09,0.73,0.25,0.33,0.76,0.52,0.01,0.35,0.86,0.34,0.67,0.35,0.48,0.76,0.8,0.95,0.9,0.91,0.17]
+
+    # header of the test results output table
+    df1=pd.DataFrame(columns=['Count of tests', 'Result'])
 
     # table header
     df = pd.DataFrame(columns=['Random number ri','-ln ri','Time between two consecutive applications','The moment of receipt of the application Ti=T(i-1)+ri',
                                'The 1 channel','The 2 channel',
                                'The 3 channel','The 4 channel',
                                'Serviced applications','Bounce rate'])
+
+
     # filling in the first row of the results table
     df = df.append({'Random number ri':'','-ln ri':'','Time between two consecutive applications':'',
                                     'The moment of receipt of the application Ti=T(i-1)+ri':'',
@@ -68,11 +72,15 @@ def my_form():
                 # if the time of receipt of the application is greater than the time of the end of 
                 # service of one of the channels, the application is received on this channel
                 if ti>link[i]:
+                    
                     # the time of the end of the application service = the time of receipt of the application + 
                     # the time of the application service
                     link[i]=round(ti+t1,3) 
+
                     # if the time of receipt of the application is less than the total time of execution of applications
                     if ti<t2:
+                        
+
                         number_of_requests_served+=1
                         # which channel served the application
                         count_column=i
@@ -139,8 +147,9 @@ def my_form():
         number_of_requests_served=1
         link=[t1,0.0,0.0,0.0]
 
-    # header of the test results output table
-    df1=pd.DataFrame(columns=['Count of tests', 'Result'])
+        
+
+    
     # filling in the results table
     for i in range(len(all_numbers_of_requests_served)):
         df1=df1.append({'Count of tests':i+1, 'Result':all_numbers_of_requests_served[i]}, ignore_index=True)
