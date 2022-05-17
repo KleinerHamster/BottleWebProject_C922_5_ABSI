@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env4|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env7|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,6 +61,9 @@
     <Content Include="requirements.txt" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
+    <Content Include="static\content\kvas.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="static\content\site.css" />
     <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
@@ -120,9 +123,6 @@
     <Content Include="views\template_sv.tpl">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\template_sv1.tpl">
-      <SubType>Code</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
@@ -178,6 +178,15 @@
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
+    </Interpreter>
+    <Interpreter Include="env7\">
+      <Id>env7</Id>
+      <Version>3.6</Version>
+      <Description>env7 (Python 3.6 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
     </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>

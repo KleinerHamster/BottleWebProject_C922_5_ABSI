@@ -29,9 +29,9 @@
 	<headerA1>Would you like to back? <a class="buttonV1" href={{button_back}}>Back</a></headerA1><br><br>
 	<!--Разделяем на абзацы-->
     <hr></hr>
+	Table from the first test:
 	</pHP>
 </div>
-
 <!--Таблица с первого теста-->
 {{!html}}
 
