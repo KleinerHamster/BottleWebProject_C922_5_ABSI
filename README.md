@@ -10,8 +10,12 @@
 2. [Running environment](#startupenvironment)
 4. [Implemented functionality](#implementedfunctionality)
 5. [Main page](#homepage)
-6. [Страница Last News](#lastnews)
-7. [Developers](#developers)
+6. [System realiability 3 and 2 thread](#systemrealiability3and2thread)
+7. [Estimating failure probilities 3 tread](#estimatingfailureprobilities3tread)
+8. [Estimating failure probilities 4 tread](#estimatingfailureprobilities4tread)
+9. [System realiability 2 and 3 thread](#systemrealiability2and3thread)
+10. [About](#about)
+11. [Developers](#developers)
 
 <a name="specifications"></a> 
 # **Specifications**
@@ -39,16 +43,44 @@ This page contains the theoretical part about simulation modeling, queueing syst
 - Description about simulation modeling, queueing system and Monte Carlo method;
 - The ability to click on the button to get more information about theoretical part and pages with tasks.
 
-<a name="lastnews"></a> 
-# **Страница Last News**
-### Предназначение
-Страница содержит самые актуальные новости в области WorldSkills и FutureSkills. 
-Статьи помогут будущим профессионалам узнать про успехи своих команд, любимых городов и не только. 
-### Функционал (содержание страницы)
-- Наличие самых свежих новостей;
-- Узнать подробнее про понравившуюся новость можно перейдя по кнопке;
-- Новости задерживаются на долго - есть возможность перейти на страницы более поздних дат;
-- Связывайтесь с руководством через контакты на странице и делитесь новейшими сенсациями.
+<a name="systemrealiability3and2thread"></a> 
+# **System realiability 3 and 2 thread**
+### Purpose
+This page contains task of evaluation of the reliability of the simplest systems by the Monte Carlo method. User can enter his data and can get an answer.
+### Functional (page content)
+- The page contains a task and the ability to enter your data (numbers), the output will be three tables and an answer;
+- This page contains an example of evaluation of the reliability of 3 and 2 threads by the Monte Carlo method.
+
+<a name="estimatingfailureprobilities3tread"></a> 
+# **Estimating failure probilities 3 tread**
+### Purpose
+This page contains task of efficient Monte Carlo methods for estimating failure probabilities 3 thread. User can enter his data and can get an answer.
+### Functional (page content)
+-  The page contains a task and the ability to enter your data (numbers), the output will be three tables and an answer;
+- This page contains an example of efficient Monte Carlo methods for estimating failure probabilities 3 thread.
+
+<a name="estimatingfailureprobilities4tread"></a> 
+# **Estimating failure probilities 4 tread**
+### Purpose
+This page contains task of efficient Monte Carlo methods for estimating failure probabilities 4 thread. User can enter his data and can get an answer.
+### Functional (page content)
+-  The page contains a task and the ability to enter your data (numbers), the output will be three tables and an answer;
+- This page contains an example of efficient Monte Carlo methods for estimating failure probabilities 4 thread.
+
+<a name="systemrealiability2and3thread"></a> 
+# **System realiability 2 and 3 thread**
+### Purpose
+This page contains task of evaluation of the reliability of the simplest systems by the Monte Carlo method. User can enter his data and can get an answer.
+### Functional (page content)
+- The page contains a task and the ability to enter your data (numbers), the output will be three tables and an answer;
+- TThis page contains an example of evaluation of the reliability of 2 and 3 threads by the Monte Carlo method.
+
+<a name="about"></a> 
+# **About Page**
+### Purpose
+The page contains information about the authors with photos of the developers, full name and a brief explanation of the personal contribution to the application project.
+### Functional (page content)
+- Contains information about the authors and their contribution to the project.
 
 <a name="developers"></a>
 # **Developers** 
