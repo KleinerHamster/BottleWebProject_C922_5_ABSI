@@ -5,38 +5,39 @@
 >
 >Monte Carlo method is used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. It is a technique used to understand the impact of risk and uncertainty in prediction and forecasting models.
 
-# **Оглавление**
-1. [Реализованная функциональность](#implementedfunctionality)
-2. [Особенность проекта](#implementedfunctionality)
-3. [Среда запуска](#startupenvironment)
-4. [Страница Home Page](#homepage)
-5. [Страница Last News](#lastnews)
-6. [Developers](#developers)
+# **Table of contents**
+1. [Specifications](#specifications)
+2. [Running environment](#startupenvironment)
+4. [Implemented functionality](#implementedfunctionality)
+5. [Main page](#homepage)
+6. [Страница Last News](#lastnews)
+7. [Developers](#developers)
 
-<a name="implementedfunctionality"></a> 
-# **Особенность проекта**
+<a name="specifications"></a> 
+# **Specifications**
 ### Core technology stack
 - HTML, CSS, JavaScript, Python.
-- Git, GitHub
-- UML, Algoti
-### Спроектировано с помощью
-- [Visual Studio 2019](https://visualstudio.microsoft.com/ru/downloads/) - среда разработки 
-- [Diagrams.net](https://www.diagrams.net) - создание UML-диаграммы
+- Git, GitHub.
+- UML, Algorithm.
+### Used oftware
+- [Visual Studio 2019](https://visualstudio.microsoft.com/ru/downloads/) - development environment
+- [Diagrams.net](https://www.diagrams.net) - creating UML-diagrams
+- [Microsoft Visio](https://support.microsoft.com/de-de/office/visio-installieren-oder-auf-visio-für-das-web-zugreifen-f98f21e3-aa02-4827-9167-ddab5b025710) - creating algorithm
 <a name="startupenvironment"></a>
-# **Среда запуска**
-Данный проект был создан в учебных целях,а именно необходимо было разработать артефакты и настроить Git. Была разработана пробная версия сайта  с помощью шаблона "Пустой веб-проект Bottle"  в среде Visual Studio 2019.
+# **Running environment**
+This project was created for the purpose of educational practice, namely, it was necessary to develop a website for solving problems of mathematical modeling. The site was developed using the "Bottle Web-project" in Visual Studio 2019, and setting up Git-versions.
 
 <a name="implementedfunctionality"></a> 
-# **Реализованная функциональность**
+# **Implemented functionality**
+Web-site consists of 1 theory page, 1 "about authors" page, 4 pages for problem solving with examples.Each page is detailed below.
 
 <a name="homepage"></a> 
-# **Страница Home page**
-### Предназначение
-Данная страница несет информационный характер для знакомства с проектом, компанией, что и себя предстваляет.
-Также страница содержит ссылки на связанные с ней страницы.
-### Функционал (содержание страницы)
-- Описание компании;
-- Возможность перехода по кнопка для знакомства с более подрой информацией о курсах, новостях, партнерах.
+# **Main page**
+### Purpose
+This page contains the theoretical part about simulation modeling, queueing system and Monte Carlo method. Also the page contains links to pages with tasks.
+### Functional (page content)
+- Description about simulation modeling, queueing system and Monte Carlo method;
+- The ability to click on the button to get more information about theoretical part and pages with tasks.
 
 <a name="lastnews"></a> 
 # **Страница Last News**
