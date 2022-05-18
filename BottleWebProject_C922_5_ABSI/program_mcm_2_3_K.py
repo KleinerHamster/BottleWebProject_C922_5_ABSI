@@ -5,8 +5,18 @@ import json
 import random, math
 from math import fabs
 import pandas as pd
-n=5
+
 array=[]
+def f_P1(a_probability, b_probability):
+    a_probability_=a_probability
+    b_probability_=b_probability
+    return (1-((1-float(a_probability_))*(1-float(b_probability_))))
+
+def f_P2(c_probability, d_probability, e_probability):
+    c_probability_=c_probability
+    d_probability_=d_probability
+    e_probability_=e_probability
+    return (1-((1-float(c_probability_))*(1-float(d_probability_))*(1-float(e_probability_))))
 @post('/mcm_system_reliability_2_3', method='post')
 def my_form():
     a_probability=request.forms.get('A')
@@ -14,6 +24,9 @@ def my_form():
     c_probability=request.forms.get('C')
     d_probability=request.forms.get('D')
     e_probability=request.forms.get('E')
+    n=request.forms.get('n')
+    n=int(n)
+
     array_probability=[float(a_probability),float(b_probability), float(c_probability), float(d_probability),float(e_probability)]
     data_frame=pd.DataFrame(columns=['#','Random number A','Random number B','Random number C', 'Random number D','Random number E','Block 1', 'Block 2', 'System'])
     a_random=0
@@ -47,8 +60,8 @@ def my_form():
          data_frame=data_frame.append({'#':i,'Random number A':float(a_random),'Random number B':float(b_random),'Random number C':float(c_random), 'Random number D':float(d_random),'Random number E':float(e_random),'Block 1':c_block_1, 'Block 2':c_block_2, 'System':c_system}, ignore_index=True)
          array.append([float(a_random),float(b_random),float(c_random), float(d_random),float(e_random),c_block_1, c_block_2, c_system])
     P=f/n
-    P1=1-((1-float(a_probability))*(1-float(b_probability)))
-    P2=1-((1-float(c_probability))*(1-float(d_probability))*(1-float(e_probability)))
+    P1=f_P1(a_probability,b_probability)
+    P2=f_P2(c_probability, d_probability, e_probability)
     P_=P1*P2
     p_absolutly=round(fabs(P_-P), 4)
     html=data_frame.to_html()
@@ -71,5 +84,4 @@ def my_form():
                     , p=P_
                     , p_pStar=p_absolutly
                     , html=html,
-                    button_back='/mcm_system_reliability_2_3')
-
+                     button_back='/mcm_system_reliability_2_3')
