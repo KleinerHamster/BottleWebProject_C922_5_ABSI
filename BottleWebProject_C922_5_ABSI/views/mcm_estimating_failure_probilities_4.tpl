@@ -13,11 +13,12 @@
 <!--Блок задания-->
 <div>
     <headerA1>Task:</headerA1>
-    <!--Основной текст ждя задачи-->
+    <!--Основной текст для задачи (формулировка задачи)-->
     <pHP>A four thread queuing system for estimating failure probabilities. The time between the receipt of two consecutive applications is 
     distributed according to the exponential law:$${f(\tau) = \alpha*e^{-\alpha\tau}}$$ 
     The service duration of each application is equal to t1 min. Find by the Monte Carlo method 
     the mathematical expectation of the number of applications served during the time T = t2 min.</pHP>
+    <!--Следующая строка-->
     <p><br></p>
     <!--Разделяем на абзацы-->
     <hr></hr>
@@ -28,19 +29,19 @@
         <div class="circular--portraitA"> <img src="static\images\mcm_estimating_failure_probilities_4\s1.png"/> </div>
         <br><headerA1>Input:<br>
         <!-- добавляем поле для ввода параметра t1 (длительность обслуживания каждой заявки), используя паттерн--> 
-        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="t1" required oninvalid="this.setCustomValidity('Enter first parameters two decimal places!')" 
+        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="10, 0.32, 8.89" required oninvalid="this.setCustomValidity('Enter first parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавляем поле для ввода параметра t2 (за какое время будет обслужены заявки), используя паттерн-->
-         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="t2" required oninvalid="this.setCustomValidity('Enter second parameters two decimal places!')" 
+         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="12, 0.2, 32.32" required oninvalid="this.setCustomValidity('Enter second parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- добавляем поле для ввода араметра a (параметр распределения показательного закона), используя паттерн-->
-        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="a" required oninvalid="this.setCustomValidity('Enter third parameters two decimal places!')" 
+        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="23,0.43,9.43" required oninvalid="this.setCustomValidity('Enter third parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавляем поле для ввода параметра n (количество проведенных испытаний), используя паттерн-->
-         n : <input title ="Count of tests" class="V" type="number" min=1 size="50" id="n" name="n" placeholder="n" required oninvalid="this.setCustomValidity('Enter fourth parameters two decimal places!')" 
+         n : <input title ="Count of tests" class="V" type="number" min=1 size="50" id="n" name="n" placeholder="1" required oninvalid="this.setCustomValidity('Enter fourth parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- кнопка для отправки-->
@@ -51,6 +52,7 @@
 
 <hr class="about">
 
+<!--Описание примера-->
 <headerA1>Example<br></headerA1>
 <pHP>Task conditions:
     <br>
@@ -87,13 +89,13 @@
    <br>The test is terminated ("stop" is recorded in the table) if the time of receipt of the application is T>4.<br>
    Table 1<br>
 </pHP>
-
+<!--Вставка таблица из oneDrive-->
 <iframe class="S" src="https://onedrive.live.com/embed?resid=64BE450E1A82AA1A%217489&authkey=%21AOjobiUA_xsLwPU&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
 
 <pHP>
 <br>From the table we find that in 4 minutes a total of 20 applications were received; x1 = 17 were served. 
 <br>Let's perform five more tests in the same way, we get: x2=15, x3=14, x4=17, x5 =13, x6=15.
 <br>As an estimate of the desired mathematical expectation a - the number of applications served, we will take a sample average:
-$${a=\bar{(x)}=\frac{2*17+2*15+14+13}{6}=}$$
+$${a=\bar{(x)}=\frac{2*17+2*15+14+13}{6}=15.2}$$
 result: a=15.2
 </pHP>
