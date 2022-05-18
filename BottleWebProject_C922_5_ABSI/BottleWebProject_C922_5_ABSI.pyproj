@@ -43,7 +43,61 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
-    <Compile Include="testing_system\mcm_3_v\module1.py">
+    <Compile Include="testing_system\mcm_2_3_k\mcm_2_3_k.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_2_3_k\test_count_system.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_2_3_k\test_P.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_2_3_k\test_P1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_2_3_k\test_P2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_2_3_k\test_result.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\mcm3and2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testP1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testP2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testPPStar.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testPStar.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testWorkBlocks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testWorkElements.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_2_a\testWorkSystem.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_v\mcm_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_3_v\test_smth_v.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_4_s\mcm_4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testing_system\mcm_4_s\test_smth.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
