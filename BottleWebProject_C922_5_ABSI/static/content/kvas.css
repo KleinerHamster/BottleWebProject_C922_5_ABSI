@@ -1,0 +1,701 @@
+/*Кастомный вид меню сверху*/
+.navbar-custom {
+    background-color: #ee82ab; /*Цвет меню*/
+}
+    /*Дополнения к кастомному виду меню сверху*/
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: black; /*Цвет шрифта*/
+        font-family: VCR OSD Mono,monospace; /*Шрифт*/
+        padding: 16px 26px; /*Внутрение отступы для текста*/
+        font-size: 28px; /*Гегель шрифта*/
+    }
+
+        /*Визуально указываем на выбранный объект */
+        .navbar-custom .navbar-brand:hover {
+            background-color: #d82f88; /*Цвет меню*/
+        }
+
+/*размещение эл-тов по блокам*/
+conteinerForText {
+    display: flex; /*горизонтально*/
+}
+
+/*делиметр*/
+delimeterPerson {
+    width: 10%;
+}
+
+/*разделяет страницу на части*/
+separateForText {
+    width: 50%;
+}
+
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 200px; /*ширина*/
+    height: 200px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait3 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 200px; /*ширина*/
+    height: 200px; /*высота*/
+    overflow: hidden;
+    border-radius: 50%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait3 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий творцов проекта*/
+.circular--portrait4 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 25%; /*Закругляем края*/
+    margin: 5px; /*Внешние отступы*/
+}
+
+    .circular--portrait4 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль шрифта заголовка страницы about*/
+headerAbout {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 120pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+/*Стиль шрифта заголовка абзаца страницы about*/
+headerParagraphAbout {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+    /*Стиль шрифта заголовка абзаца страницы mcm_3_2*/
+    headerParagraphAbout.A {
+        font-size: 38pt; /*Гегель шрифта*/
+    }
+
+/*Стиль шрифта основного текста страницы about*/
+pAbout {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    font-size: 18px; /*Гегель шрифта*/
+    color: black; /*Цвет шрифта*/
+}
+/*Стиль шрифта отображения вниху KVAS*/
+pEnd {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 16px; /*Гегель шрифта*/
+    color: #ee82ab; /*Цвет шрифта*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+
+
+/*Стиль шрифта заголовка страницы about*/
+headerHP1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 48pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+}
+
+/*Стиль шрифта заголовка страницы about*/
+headerHP2 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 32pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: left; /*Размещаем текст по ширине*/
+}
+
+h1.new {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 32pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: right; /*Размещаем текст по центру*/
+}
+/*Стиль шрифта небольшого вступления*/
+pHP1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24px; /*Гегель шрифта*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+}
+
+/*Стиль шрифта заголовка страницы about*/
+headerAbout2 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 80pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: left; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portrait1 {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 500px; /*ширина*/
+    height: 500px; /*высота*/
+    overflow: hidden;
+    border-radius: 25%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait1 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portrait2 {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 15%; /*Закругляем края*/
+    margin: 10px; /*Внешние отступы*/
+}
+
+    .circular--portrait2 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitA {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 15%; /*Закругляем края*/
+    margin-right: 120px; /*Внешние отступы слева*/
+    margin-bottom: 10px; /*Внешние отступы снизу*/
+    margin-top: 70px; /*Внешние отступы сверху*/
+}
+
+    .circular--portraitA img {
+        width: 100%;
+        height: auto;
+    }
+/*Вид кнопки .buttonHP*/
+.buttonHP {
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 500px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonHP:hover {
+        background-color: #d82f88; /*Цвет заднего фота*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+
+/*скрытие элемента*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+    /*появление элемента*/
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+/*Всплывающиеся окно*/
+.popup {
+    margin: 70px auto; /*Внешние отступы*/
+    padding: 20px; /*Внутрение отступы*/
+    background: #fff; /*задний фон*/
+    border-radius: 5px; /*закругленные края*/
+    width: 30%; /*ширина*/
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+    /*Шрифт заголовков*/
+    .popup h1 {
+        margin-top: 0;
+        color: #bb64a1; /*Цвет шрифта*/
+        font-size: 48px; /*Гегель шрифта*/
+        text-align: center; /*Размещаем текст по центру*/
+        font-weight: bold; /* Полужирный*/
+        font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    }
+    /*Шрифт основного текста*/
+    .popup p1 {
+        margin-top: 0;
+        color: black; /*Цвет шрифта*/
+        font-size: 24px; /*Гегель шрифта*/
+        text-align: justify; /*Размещаем текст по ширине*/
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    }
+    /*закритие окна*/
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .popup .close:hover {
+            color: #d82f88; /*Цвет на крестик*/
+        }
+
+    .popup .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+
+/*элемент визуального разделения*/
+hr {
+    border: none;
+    border-top: 3px double #d82f88; /*цвет линий*/
+    color: #d82f88; /*цвет текста*/
+    overflow: visible;
+    text-align: center; /*Выравнивание по центру*/
+    height: 5px;
+}
+
+    /*элемент визуального разделения*/
+    hr.about {
+        border: none;
+        border-top: 3px double #d82f88; /*цвет линий*/
+        color: #d82f88; /*цвет текста*/
+        overflow: visible;
+        text-align: center; /*Выравнивание по центру*/
+        height: 5px;
+    }
+
+        hr.about:after {
+            background: #fff; /*фон*/
+            content: 'KVAS'; /*надпись*/
+            padding: 0 4px; /*внутрение отступы*/
+            position: relative; /*цвет текста*/
+            top: -13px;
+        }
+    /*элемент визуального разделения*/
+    hr.new1 {
+        border: none;
+        border-top: 3px double #d82f88; /*цвет линий*/
+        color: #d82f88; /*цвет текста*/
+        overflow: visible;
+        text-align: right; /*Выравнивание по центру*/
+        height: 5px;
+    }
+
+        hr.new1:after {
+            background: #fff; /*фон*/
+            content: 'KVAS'; /*надпись*/
+            padding: 0 4px; /*внутрение отступы*/
+            position: relative; /*цвет текста*/
+            top: -13px;
+        }
+
+/*элемент для размецения информации*/
+.jumbotron {
+    padding: 200px;
+    margin-bottom: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: black;
+    background: #ee82ab;
+}
+
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.container .jumbotron {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/*Шрифт основного текста*/
+pHP {
+    margin-top: 0;
+    color: black; /*Цвет шрифта*/
+    font-size: 24px; /*Гегель шрифта*/
+    text-align: justify; /*Размещаем текст по ширине*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*Шрифт*/
+}
+
+/*Стиль шрифта заголовка абзаца страницы about*/
+headerParagraph1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 18pt; /*Гегель шрифта*/
+    color: black; /*Цвет шрифта*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+/*Стиль шрифта заголовка страницы mcm_3_2t*/
+headerA1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: justify; /*Текст по ширине*/
+}
+
+headerHP2 {
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: normal; /* Полужирный*/
+}
+
+
+/*Вид кнопки .buttonHP*/
+.buttonA {
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 572px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonA:hover {
+        background-color: #d82f88; /*Цвет заднего фона*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+.tbA { /*стиль таблицы*/
+    border-collapse: collapse;
+}
+
+    .tbA th, .tbA td { /*стиль для заголовка и ячеек*/
+        padding: 5px; /*Внутрение отступы*/
+        font-family: VCR OSD Mono,monospace; /*Шрифт*/
+        font-size: 24pt; /*Гегель шрифта*/
+        border: solid 3px #bb64a1;
+    }
+
+    .tbA th { /*стиль для заголовка дополнение*/
+        background-color: #ee82ab; /*Цвет заднего фона*/
+        text-align: center; /*текст по центру*/
+    }
+
+iframe { /*стиль для ввыода таблиц из excel*/
+    width: 1150px; /*ширина*/
+    height: 350px; /*выстота*/
+    border: 0; /*границы*/
+}
+
+    iframe.A1 { /*стиль для ввыода таблиц из excel*/
+        height: 550px; /*выстота*/
+    }
+
+/*Стиль для вставки фото mcm 3 tread*/
+.circular--portraitV {
+    float: right; /*расположение справа*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 25%; /*Закругляем края*/
+    margin-left: 15px; /*Внешние отступы*/
+}
+
+    .circular--portraitV img {
+        width: 100%;
+        height: auto;
+    }
+
+/*Вид кнопки .buttonHP*/
+.buttonV {
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 600px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonV:hover {
+        background-color: #d82f88; /*Цвет заднего фона*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+.buttonV1 {
+    float: right;
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 550px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonV1:hover {
+        background-color: #d82f88; /*Цвет заднего фона*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+.tbV { /*стиль таблицы*/
+    border-collapse: collapse;
+    margin: auto;
+}
+
+    .tbV th, .tbV td { /*стиль для заголовка и ячеек*/
+        padding: 5px; /*Внутрение отступы*/
+        font-family: VCR OSD Mono,monospace; /*Шрифт*/
+        font-size: 20pt; /*Гегель шрифта*/
+        border: solid 3px #bb64a1;
+        width: 300px;
+    }
+
+    .tbV th { /*стиль для заголовка дополнение*/
+        background-color: #ee82ab; /*Цвет заднего фона*/
+        text-align: center; /*текст по центру*/
+    }
+/*Стиль шрифта заголовка страницы mcm_3_2t*/
+headerV1 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: bold; /* Полужирный*/
+    color: #bb64a1; /*Цвет шрифта*/
+    text-align: center; /*Текст по ширине*/
+    text-align: center; /*Размещаем текст по центру*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitV1 {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 500px; /*ширина*/
+    height: 400px; /*высота*/
+    overflow: hidden;
+    /*Внешние отступы*/
+    margin-right: 100px;
+    margin-bottom: 5px;
+}
+
+    .circular--portraitV1 img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitV2 {
+    position: relative;
+    width: 550px; /*ширина*/
+    height: 500px; /*высота*/
+    overflow: hidden;
+    /*Внешние отступы*/
+    margin-left: 60px;
+}
+
+    .circular--portraitV2 img {
+        width: 100%;
+        height: auto;
+    }
+
+
+table { /*стиль таблицы*/
+    /*стиль границ*/
+    border: 2px solid #bb64a1;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px; /*Внутрение отступы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 16pt; /*Гегель шрифта*/
+    border: solid 3px #bb64a1;
+    text-align: center; /*текст по центру*/
+}
+
+th {
+    background-color: #ee82ab; /*Цвет заднего фона*/
+}
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitV2 {
+    position: relative;
+    width: 550px; /*ширина*/
+    height: 500px; /*высота*/
+    overflow: hidden;
+    /*Внешние отступы*/
+    margin-left: 60px;
+}
+/*Вид кнопки .buttonS*/
+.buttonS {
+    background-color: #ee82ab; /*Цвет кнопки*/
+    min-width: 725px; /*Минимальная ширина*/
+    color: white; /*Цвет шрифта*/
+    padding: 16px 56px; /*Внутрение отступы*/
+    text-align: center; /*Размещаем текст по центру*/
+    font-size: 24px; /*Гегель шрифта*/
+    border-color: #ee82ab; /*Цвет границы*/
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    text-decoration: none;
+    float: right;
+}
+    /*Вид кнопки при нажатии .buttonHP*/
+    .buttonS:hover {
+        background-color: #d82f88; /*Цвет заднего фона*/
+        border-color: #d82f88; /*Цвет границы*/
+        color: black; /*Цвет шрифта*/
+        text-decoration: none;
+    }
+
+/*Стиль, когда вводим неверное значение*/
+textarea:invalid,
+input:invalid {
+    border: 2px solid #f5dfde; /*Границы стиля*/
+    background: #ea9dbd;
+}
+    /*Стиль, для обязательного заполнения*/
+    input:invalid:required,
+    textarea:invalid:required {
+        border: 2px solid #f5dfde; /*Границы стиля*/
+        color: black; /*Цвет шрифта*/
+        background: #ea9dbd;
+        width: 100px;
+    }
+
+/*Стиль, когда вводим в верном значение*/
+input:valid,
+textarea:valid {
+    border: 2px solid #ee82ab; /*Границы стиля*/
+}
+
+/*Стиль, когда вводим неверное значение*/
+input.V:invalid {
+    border: 2px solid #f5dfde; /*Границы стиля*/
+    background: #ea9dbd;
+}
+    /*Стиль, для обязательного заполнения*/
+    input.V:invalid:required {
+        border: 2px solid #f5dfde; /*Границы стиля*/
+        color: black; /*Цвет шрифта*/
+        background: #ea9dbd;
+        width: 300px;
+    }
+
+/*Стиль, когда вводим в верном значение*/
+input.V:valid {
+    border: 2px solid #ee82ab; /*Границы стиля*/
+}
+/*Стиль, когда вводим неверное значение*/
+input.A:invalid {
+    border: 2px solid #f5dfde; /*Границы стиля*/
+    background: #ea9dbd;
+}
+    /*Стиль, для обязательного заполнения*/
+    input.A:invalid:required {
+        border: 2px solid #f5dfde; /*Границы стиля*/
+        color: black; /*Цвет шрифта*/
+        background: #ea9dbd;
+        width: 250px;
+    }
+
+/*Стиль, когда вводим в верном значение*/
+input.S:valid {
+    border: 2px solid #ee82ab; /*Границы стиля*/
+}
+/*Стиль, когда вводим неверное значение*/
+input.S:invalid {
+    border: 2px solid #f5dfde; /*Границы стиля*/
+    background: #ea9dbd;
+}
+    /*Стиль, для обязательного заполнения*/
+    input.S:invalid:required {
+        border: 2px solid #f5dfde; /*Границы стиля*/
+        color: black; /*Цвет шрифта*/
+        background: #ea9dbd;
+        width: 200px;
+    }
+
+/*Стиль, когда вводим в верном значение*/
+input.S:valid {
+    border: 2px solid #ee82ab; /*Границы стиля*/
+}
+
+iframe.S { /*стиль для ввыода таблиц из excel*/
+    width: 975px; /*ширина*/
+    height: 650px; /*выстота*/
+    border: 0; /*границы*/
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}

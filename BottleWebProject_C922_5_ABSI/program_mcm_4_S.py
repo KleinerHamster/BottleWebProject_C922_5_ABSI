@@ -28,18 +28,22 @@ def my_form():
     count_1=0
     all_numbers_of_requests_served=[0]*n
     result=0
-    total_count=1
+    total_count=0
 
-    if t1>t2:
-        return "hfhhfhf"
+   
     # example to check
     #random_number=[0.1,0.09,0.73,0.25,0.33,0.76,0.52,0.01,0.35,0.86,0.34,0.67,0.35,0.48,0.76,0.8,0.95,0.9,0.91,0.17]
+
+    # header of the test results output table
+    df1=pd.DataFrame(columns=['Count of tests', 'Result'])
 
     # table header
     df = pd.DataFrame(columns=['Random number ri','-ln ri','Time between two consecutive applications','The moment of receipt of the application Ti=T(i-1)+ri',
                                'The 1 channel','The 2 channel',
                                'The 3 channel','The 4 channel',
                                'Serviced applications','Bounce rate'])
+
+
     # filling in the first row of the results table
     df = df.append({'Random number ri':'','-ln ri':'','Time between two consecutive applications':'',
                                     'The moment of receipt of the application Ti=T(i-1)+ri':'',
@@ -56,7 +60,7 @@ def my_form():
         # if the time of receipt of the application is less than the total time of execution of applications
         while ti<t2:
             # random number
-            random_number=round(random.uniform(0,1),3)
+            random_number=round(random.uniform(0.001,1),3)
             # finding -ln(random_number)
             convert_number_to_ln=round(-math.log(random_number),3)
             # duration of time between two consecutive bids with numbers 
@@ -68,17 +72,23 @@ def my_form():
                 # if the time of receipt of the application is greater than the time of the end of 
                 # service of one of the channels, the application is received on this channel
                 if ti>link[i]:
+                    
                     # the time of the end of the application service = the time of receipt of the application + 
                     # the time of the application service
                     link[i]=round(ti+t1,3) 
+
                     # if the time of receipt of the application is less than the total time of execution of applications
                     if ti<t2:
+                        
+
                         number_of_requests_served+=1
                         # which channel served the application
                         count_column=i
                     else:
-                        count_column=-1
+                        count_column=-2
                     break
+                elif ti>t2:
+                    count_column=-2
                 else:
                     count_column=-1
 
@@ -128,6 +138,15 @@ def my_form():
                                 'The 4 channel':'',
                                 'Serviced applications':'','Bounce rate':1}, ignore_index=True)     
 
+                elif count_column==-2:
+                    df = df.append({'Random number ri':random_number,'-ln ri':convert_number_to_ln,'Time between two consecutive applications':ri,
+                                'The moment of receipt of the application Ti=T(i-1)+ri':ti,
+                                'The 1 channel':'',
+                                'The 2 channel':'', 
+                                'The 3 channel':'',
+                                'The 4 channel':'',
+                                'Serviced applications':'','Bounce rate':'stop'}, ignore_index=True)     
+
             count+=1
 
         # number of applications served in each trial
@@ -139,8 +158,9 @@ def my_form():
         number_of_requests_served=1
         link=[t1,0.0,0.0,0.0]
 
-    # header of the test results output table
-    df1=pd.DataFrame(columns=['Count of tests', 'Result'])
+        
+
+    
     # filling in the results table
     for i in range(len(all_numbers_of_requests_served)):
         df1=df1.append({'Count of tests':i+1, 'Result':all_numbers_of_requests_served[i]}, ignore_index=True)
@@ -156,6 +176,6 @@ def my_form():
     html=df.to_html()
 
     return template('template_sv', number_mcm=4, time=t2, total_count=total_count, number_of_requests_served=all_numbers_of_requests_served[0],
-                    all_tests=count_of_tests, html1=html_table_of_test, result=round(result,3), button_back='\mcm_estimating_failure_probilities_4',html=html)
+                    all_tests=count_of_tests-1, html1=html_table_of_test, result=round(result,3), button_back='\mcm_estimating_failure_probilities_4',html=html)
 
 

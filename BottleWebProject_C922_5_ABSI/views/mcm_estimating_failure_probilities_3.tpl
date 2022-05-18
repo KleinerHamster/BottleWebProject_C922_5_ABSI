@@ -23,7 +23,7 @@
     <pHP>A three thread queuing system for estimating failure probabilities. The time between the receipt of two consecutive applications is 
     distributed according to the exponential law:$${f(\tau) = \alpha*e^{-\alpha\tau}}$$ 
     The service duration of each application is equal to t1 min. Find by the Monte Carlo method 
-    the mathematical expectation of the number of applications served during the time T = t2 hours.</pHP>
+    the mathematical expectation of the number of applications served during the time T = t2 min.</pHP>
     <p><br></p>
     <!--Разделяем на абзацы-->
     <hr></hr>
@@ -41,9 +41,9 @@
                 <th>$${\alpha}$$ </th>
             </tr>
             <tr><!--Ячейки для ввода -->
-                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t1" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability of the first element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t2" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability of the second element!')" oninput="this.setCustomValidity('')"></td>
-                <td><input class="V" type="number" min="0.01" step="0.01" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability of the third element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t1" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the first element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0" step="0.01" name="NUMBER_t2" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the second element!')" oninput="this.setCustomValidity('')"></td>
+                <td><input class="V" type="number" min="0.01" step="0.01" name="NUMBER_a" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the third element!')" oninput="this.setCustomValidity('')"></td>
            </tr>
         </table>
         <br>

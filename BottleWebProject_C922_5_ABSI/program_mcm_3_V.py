@@ -22,14 +22,11 @@ def my_form():
     n=int(n)
     all_tests=int(n)
 
-    if t1>t2:
-        return "hfhhfhf"
-
     n1=0
     flag=0
     ti=0.0
     link=[t1,0.0,0.0]
-    count_test=1
+    count_test=0
     count=0
     # example to check
     #random_number=[0.1,0.09,0.73,0.25,0.33,0.76,0.52,0.01,0.35,0.86,0.34,0.67,0.35,0.48,0.76,0.8,0.95,0.9,0.91,0.17]
@@ -61,8 +58,6 @@ def my_form():
             ri=(1/a)*convert_number_to_ln
             # the moment of receipt of the application
             ti+=ri
-            # number of tests
-            count_test+=1
             # pass by number of channels (3)
             for i in range(len(link)):
                 # if the time of receipt of the application is greater than the time of the end of 
@@ -77,14 +72,18 @@ def my_form():
                         # which channel served the application
                         count_column=i
                     else:
-                        count_column=-1
+                        count_column=-2
                     break
+                elif ti>t2:
+                    count_column=-2
                 else:
                     count_column=-1
 
             # enter only the data of the first test into the table
             # filling in the table
             if flag==0:
+                # number of tests
+                count_test+=1
                 if count_column==0:
                     df = df.append({'N test':count_test,'Random number ri':round(random_number,3),'-ln ri':round(convert_number_to_ln,3),'Time between two appilications':round(ri,3),
                                         'Moment applying':round(ti,3),
@@ -113,6 +112,13 @@ def my_form():
                                 'The 2 channel':'', 
                                 'The 3 channel':'',
                                 'Service':'','Rejection':1}, ignore_index=True)     
+                elif count_column==-2:
+                    df = df.append({'N test':count_test,'Random number ri':round(random_number,3),'-ln ri':round(convert_number_to_ln,3),'Time between two appilications':round(ri,3),
+                                'Moment applying':round(ti,3),
+                                'The 1 channel':'',
+                                'The 2 channel':'', 
+                                'The 3 channel':'',
+                                'Service':'','Rejection':'stop'}, ignore_index=True)     
 
         # number of applications served in each trial
         all_numbers_of_requests_served[count_1]=number_of_requests_served+1
@@ -139,4 +145,4 @@ def my_form():
     html=df.to_html()
 
     return template('template_sv', number_mcm=3, time=t2, total_count=count_test, number_of_requests_served=all_numbers_of_requests_served[0],
-                    all_tests=all_tests, result=round(result,3), html1=html_table_of_test, button_back='\mcm_estimating_failure_probilities_3',html=html)
+                    all_tests=all_tests-1, result=round(result,3), html1=html_table_of_test, button_back='\mcm_estimating_failure_probilities_3',html=html)
