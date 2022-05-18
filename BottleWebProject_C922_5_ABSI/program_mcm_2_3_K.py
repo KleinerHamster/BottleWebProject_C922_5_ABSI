@@ -70,5 +70,6 @@ def my_form():
                     , p2=P2
                     , p=P_
                     , p_pStar=p_absolutly
-                    , html=html)
+                    , html=html,
+                    button_back='/mcm_system_reliability_2_3')
 

@@ -52,7 +52,7 @@
 
 <!--Разделяем на абзацы-->
     <hr></hr>
-	<headerA1>Would you like to back? <a class="buttonV1" href="/mcm_system_reliability_3_2">Back</a></headerA1><br><br>
+	<headerA1>Would you like to back? <a class="buttonV1" href={{button_back}}>Back</a></headerA1><br><br>
 	<!--Разделяем на абзацы-->
     <hr></hr>
 

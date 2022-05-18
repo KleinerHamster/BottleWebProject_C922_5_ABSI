@@ -190,7 +190,8 @@ def my_form():
                     , p2=p2
                     , p=p
                     , p_pStar=p_pStar
-                    , html=html)
+                    , html=html,
+                    button_back='/mcm_system_reliability_3_2')
 
     #return html
     #return "<p>"+str(numberOfTests)+"</p><p>"+str(A)+"</p><p>"+str(p_star)+"</p><p>"+str(p1)+"</p><p>"+str(p2)+"</p><p>"+str(p)+"</p><p>"+str(p_pStar)+"</p><table border='1'><caption>tabliza razmerov obuvi</caption><tr><th>Russia</th><th>Greate Britain</th><th>Eroupe</th><th>Dlina stupni, sm</th></tr><tr><td>"+str(p)+"</td><td>"+str(p)+"</td><td>36</td><td>23</td></tr></table>"
