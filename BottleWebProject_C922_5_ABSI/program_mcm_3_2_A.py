@@ -2,6 +2,7 @@ from bottle import post, request, template
 import pdb 
 import random
 import pandas as pd
+import json
 
 @post('/program_mcm_3_2_A', method='post')
 def my_form():
@@ -120,7 +121,23 @@ def my_form():
                                ])
     #df=df.set_index('Test number')
 
+    arrayForTxt=[]
+
     for number in range(numberOfTests):
+        arrayForTxt.append([list[number].numberA
+                            ,list[number].numberB
+                            ,list[number].numberC
+                            ,list[number].numberD
+                            ,list[number].numberE
+                            ,list[number].resultA
+                            ,list[number].resultB
+                            ,list[number].resultC
+                            ,list[number].resultD
+                            ,list[number].resultE
+                            ,list[number].blockOne
+                            ,list[number].blockTwo
+                            ,list[number].systems])
+
         df=df.append({
             'Test number':number+1
             ,'Block':"First"
@@ -156,6 +173,10 @@ def my_form():
             }, ignore_index=True)
 
     html=df.to_html()
+
+    with open('mcm_3_2.txt', 'a') as outfile:
+        outfile.write("\n"+"P*|"+str(p_star)+"\n"+"P1|"+str(p1)+"\n"+"P2|"+str(p2)+"\n"+"P|"+str(p)+"\n"+"PABS|"+str(p_pStar)+"\n")
+        json.dump(arrayForTxt, outfile)
 
     return template('template_ak'
                     , A_str=A_str
