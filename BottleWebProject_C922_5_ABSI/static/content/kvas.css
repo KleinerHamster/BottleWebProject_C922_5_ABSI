@@ -260,7 +260,7 @@ headerAbout2 {
     padding: 20px; /*Внутрение отступы*/
     background: #fff; /*задний фон*/
     border-radius: 5px; /*закругленные края*/
-    width: 30%; /*ширина*/
+    width: 40%; /*ширина*/
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -400,7 +400,16 @@ headerA1 {
 
 headerHP2 {
     font-size: 24pt; /*Гегель шрифта*/
-    font-weight: normal; /* Полужирный*/
+    font-weight: bold; /* Полужирный*/
+    font-size: 32pt; /*Гегель шрифта*/
+}
+
+headerMCM32 {
+    font-family: VCR OSD Mono,monospace; /*Шрифт*/
+    font-size: 24pt; /*Гегель шрифта*/
+    color: #bb64a1; /*Цвет шрифта*/
+    font-size: 24pt; /*Гегель шрифта*/
+    font-weight: normal; /* Не жирный*/
 }
 
 
@@ -558,16 +567,16 @@ headerV1 {
 /*Стиль для вставки фотографий слева проекта*/
 .circular--portraitV2 {
     position: relative;
-    width: 550px; /*ширина*/
-    height: 500px; /*высота*/
+    width: 700px; /*ширина*/
+    height: 600px; /*высота*/
     overflow: hidden;
     /*Внешние отступы*/
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
     .circular--portraitV2 img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
 
@@ -588,15 +597,7 @@ th, td {
 th {
     background-color: #ee82ab; /*Цвет заднего фона*/
 }
-/*Стиль для вставки фотографий слева проекта*/
-.circular--portraitV2 {
-    position: relative;
-    width: 550px; /*ширина*/
-    height: 500px; /*высота*/
-    overflow: hidden;
-    /*Внешние отступы*/
-    margin-left: 60px;
-}
+
 /*Вид кнопки .buttonS*/
 .buttonS {
     background-color: #ee82ab; /*Цвет кнопки*/
@@ -660,6 +661,7 @@ input.V:valid {
 input.A:invalid {
     border: 2px solid #f5dfde; /*Границы стиля*/
     background: #ea9dbd;
+    width: 250px;
 }
     /*Стиль, для обязательного заполнения*/
     input.A:invalid:required {
@@ -668,22 +670,29 @@ input.A:invalid {
         background: #ea9dbd;
         width: 250px;
     }
+input.A:valid {
+    border: 2px solid #ee82ab; /*Границы стиля*/
+
+    width: 250px;
+}
 
 /*Стиль, когда вводим в верном значение*/
-input.S:valid {
+input.K:valid {
     border: 2px solid #ee82ab; /*Границы стиля*/
+    width: 250px;
 }
 /*Стиль, когда вводим неверное значение*/
-input.S:invalid {
+input.K:invalid {
     border: 2px solid #f5dfde; /*Границы стиля*/
     background: #ea9dbd;
+    width: 250px;
 }
     /*Стиль, для обязательного заполнения*/
-    input.S:invalid:required {
+    input.K:invalid:required {
         border: 2px solid #f5dfde; /*Границы стиля*/
         color: black; /*Цвет шрифта*/
         background: #ea9dbd;
-        width: 200px;
+        width: 250px;
     }
 
 /*Стиль, когда вводим в верном значение*/
@@ -699,3 +708,37 @@ iframe.S { /*стиль для ввыода таблиц из excel*/
     display: table; /*тип отображения*/
     margin: 0 auto 0 auto; /*внешние отступы*/
 }
+
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitK {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 300px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    border-radius: 15%; /*Закругляем края*/
+    margin-right: 120px; /*Внешние отступы слева*/
+    margin-bottom: 10px; /*Внешние отступы снизу*/
+    margin-top: 70px; /*Внешние отступы сверху*/
+}
+
+    .circular--portraitK img {
+        width: 100%;
+        height: auto;
+    }
+/*Стиль для вставки фотографий слева проекта*/
+.circular--portraitK1 {
+    float: left; /*расположение слева*/
+    position: relative;
+    width: 500px; /*ширина*/
+    height: 300px; /*высота*/
+    overflow: hidden;
+    /*Размещение по центру*/
+    display: table; /*тип отображения*/
+    margin: 0 auto 0 auto; /*внешние отступы*/
+}
+
+    .circular--portraitK1 img {
+        width: 100%;
+        height: 100%;
+    }

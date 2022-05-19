@@ -18,7 +18,6 @@
     <hr class="new1">
     </hr>
     <p><br></p>
-    <p><br></p>
 </div>
 
 <!--Первое сплывающее окно-->
@@ -31,9 +30,11 @@
             <!--Изображение текста-->
             <div class="circular--portrait"> <img src="static\images\home\2.png" /> </div>
             <!--Основной текст-->
-            <p1>Simulation modeling is the process of creating and analyzing a digital prototype of a physical model to predict its performance in the real world. 
-            Simulation modeling is used to help designers and engineers understand whether, under what conditions,
-            and in which ways a part could fail and what loads it can withstand.</p1>
+            <p1>Simulation modeling is obtaining experimental information about a complex object, which cannot be obtained in any other way except by experimenting with its model on a computer.
+        The Monte Carlo method is a statistical modeling or simulation method. This is a numerical method for solving problems by modeling random variables.
+        The idea of the method is extremely simple and consists in the following.
+        Instead of describing the process with the help of an analytical apparatus, a drawing of a random phenomenon is carried out using a specially organized procedure that includes randomness and gives a random result. The implementation of a random process develops differently each time, i.e. we get different outcomes of the process under consideration. This set of implementations can be used as some kind of artificially obtained statistical material that can be processed by conventional methods of mathematical statistics. After such processing, you can get: the probability of an event, mathematical expectation, etc.
+        Using the Monte Carlo method, any probabilistic problem can be solved, but it is justified when the drawing procedure is simpler, and not more complicated than analytical calculation.</p1>
 		</div>
 	</div>
 </div>
@@ -46,19 +47,20 @@
     <hr >
     </hr>
     <div class="jumbotron">
-        <!--Изображене слева-->
-        <div class="circular--portrait2"> <img src="static\images\home\3.png" /> </div>
+        
         <!--Основной текст-->
         Queueing systems are simplified mathematical models to explain congestion. A queueing system can be described as a system having a service facility at 
         which units of some kind (generically called "customers") arrive for service; whenever there are more units in the system than the service facility can 
         handle simultaneously, a queue (or waiting line) develops. The waiting units take their turn for service according to a preassigned rule, and after service 
-        they leave the system. Thus, the input to the system consists of the customers demanding service, and the output is the serviced customers. 
+        they leave the system. Thus, the input to the system consists of the customers demanding service, and the output is the serviced customers.
+        Components of a Queuing System: A queuing system is characterised by three components: - Arrival process - Service mechanism - Queue discipline. 
+        Arrivals may originate from one or several sources referred to as the calling population. The calling population can be limited or 'unlimited'.
     </div>
     <!--Разделяем на абзацы-->
     <hr class="about">
     </hr>
     <p><br></p>
-    <p><br></p>
+
 </div>
 
 <!-- блок с информацией о методе Монте-Карло-->

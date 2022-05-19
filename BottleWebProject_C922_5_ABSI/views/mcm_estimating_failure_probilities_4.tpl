@@ -45,7 +45,7 @@
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- кнопка для отправки-->
-        <input class="buttonS" type="submit"  class="btn btn-default" value="Send">
+        <input class="buttonS" type="submit" value="Send">
         <br><br>
         </headerA1>
 </form>
@@ -99,3 +99,6 @@
 $${a=\bar{(x)}=\frac{2*17+2*15+14+13}{6}=15.2}$$
 result: a=15.2
 </pHP>
+<!--Разделяем на абзацы-->
+<hr class="about">
+</hr>

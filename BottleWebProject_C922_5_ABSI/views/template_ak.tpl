@@ -9,10 +9,10 @@
     </hr>
 </div>
 <!--Количество проведенных тестов-->
-<headerHP2>Number of tests: {{N_str}}</headerHP2>
+<headerMCM32>Number of tests: {{N_str}}</headerMCM32>
 <table class="tbV"><!--Таблица -->
 
-    <caption><headerHP2>Probabilities of elements:</headerHP2></caption>
+    <caption><headerA1>Probabilities of elements:</headerA1></caption>
     <tr><!--Шапка таблицы-->
         <th>A</th>
         <th>B</th>
@@ -33,7 +33,7 @@
 <hr></hr>
 
 <table class="tbV"><!--Таблица-->
-    <caption><headerHP2>Probability of uptime:</headerHP2></caption>
+    <caption><headerA1>Probability of uptime:</headerA1></caption>
     <tr><!--Шапка таблицы-->
         <th>P*</th>
         <th>P1</th>
@@ -57,7 +57,7 @@
     <hr></hr>
 
 
-<headerHP2>Test results:</headerHP2>
+<headerMCM32>Test results:</headerMCM32>
 
 <!--Таблица с первого теста-->
 {{!html}}

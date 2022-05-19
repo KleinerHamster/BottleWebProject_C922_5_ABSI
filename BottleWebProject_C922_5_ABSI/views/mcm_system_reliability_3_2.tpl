@@ -46,10 +46,10 @@
        </tr>
     </table>
     <br>
-    <headerHP2>
+    <headerMCM32>
         Number of tests: <!--Ячейка для ввода -->
-        <input class="A" step="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
-    </headerHP2>
+        <input class="A" min="1" step="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+    </headerMCM32>
     <p><br></p>
     <p><input type="submit" class="buttonA" value="Calculate"></p>
 </form>
@@ -57,7 +57,7 @@
 <br><hr class="about">
 <!--Блок с примером-->
 <div>
-    <headerHP2>Example:</headerHP2>
+    <headerMCM32>Example:</headerMCM32>
     <!--Разделяем на абзацы-->
     <hr></hr>
     <pHP>
@@ -69,7 +69,7 @@
     of the found value, where P is the reliability of the system, calculated analytically.<br>Perform 100 tests.</pHP>
     <!--Разделяем на абзацы-->
     <hr></hr>
-    <headerHP2>Solution:</headerHP2>
+    <headerMCM32>Solution:</headerMCM32>
     <!--Разделяем на абзацы-->
     <hr></hr>
     <!--Основной текст-->
