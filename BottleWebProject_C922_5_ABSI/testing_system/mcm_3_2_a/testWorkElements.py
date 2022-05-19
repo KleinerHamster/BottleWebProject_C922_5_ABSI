@@ -1,1 +1,24 @@
+import testing_system.mcm_3_2_a.mcm3and2    # The code to test
+import unittest   # The test framework
+
+class WorkElementsTest(unittest.TestCase):
+
+    def test1_conclusionAboutTheWorkElement(self):
+        self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.conclusionAboutTheWorkElement(0.8,0.9,0.85,0.7,0.78,
+                                                                0.97,0.12,0.48,0.22,0.64)
+                         , ["-","+","+","+","+"])
+
+    def test2_conclusionAboutTheWorkElement(self):
+        self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.conclusionAboutTheWorkElement(0.9,0.35,0.7,0.85,0.68,
+                                                                0.31,0.81,0.88,0.81,0.88)
+                         , ["+","-","-","+","-"])
+
+    def test3_conclusionAboutTheWorkElement(self):
+        self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.conclusionAboutTheWorkElement(0.75,0.34,0.52,0.29,0.6,
+                                                                0.89,0.2,0.48,0.22,0.64)
+                         , ["-","+","+","+","-"])
+
+if __name__ == '__main__':
+    unittest.main()
+
 
