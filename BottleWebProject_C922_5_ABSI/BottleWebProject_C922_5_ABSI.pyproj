@@ -21,7 +21,7 @@
     <InterpreterId>MSBuild|env4|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>C:\Users\Anya\Source\Repos\BottleWebProject_C922_5_ABSI_Part5\BottleWebProject_C922_5_ABSI\testing_system\mcm_3_2_a\</UnitTestRootDirectory>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
