@@ -1,3 +1,4 @@
+# checking the correctness of the calculation of the time of receipt of applications
 def moment_of_receipt_of_the_application(random_number, a, t1):
     import math
     convert_number_to_ln=-math.log(random_number)
@@ -5,8 +6,8 @@ def moment_of_receipt_of_the_application(random_number, a, t1):
     ti=round(t1+ri,3)
     return ti
 
-
-def link1(list_link, ti, t1):
+# checking the calculation of the end time of channel maintenance by different channels
+def filling_channel(list_link, ti, t1):
     for i in range(len(list_link)):
         if ti>list_link[i]:
            list_link[i]=round(ti+t1,3) 

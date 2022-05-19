@@ -29,15 +29,15 @@
         <div class="circular--portraitA"> <img src="static\images\mcm_estimating_failure_probilities_4\s1.png"/> </div>
         <br><headerA1>Input:<br>
         <!-- добавл€ем поле дл€ ввода параметра t1 (длительность обслуживани€ каждой за€вки), использу€ паттерн--> 
-        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="10, 0.32, 8.89" required oninvalid="this.setCustomValidity('Enter first parameters two decimal places!')" 
+        t1: <input title ="t1"  class="V" type="number" min=0 step="0.01" size="50" id="t1" name="t1" placeholder="10, 0.32" required oninvalid="this.setCustomValidity('Enter first parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавл€ем поле дл€ ввода параметра t2 (за какое врем€ будет обслужены за€вки), использу€ паттерн-->
-         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="12, 0.2, 32.32" required oninvalid="this.setCustomValidity('Enter second parameters two decimal places!')" 
+         t2: <input title ="t2" class="V" type="number" min=0 step="0.01" size="50" id="t2" name="t2" placeholder="12, 0.2" required oninvalid="this.setCustomValidity('Enter second parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"><br><br>
 
         <!-- добавл€ем поле дл€ ввода араметра a (параметр распределени€ показательного закона), использу€ паттерн-->
-        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="23,0.43,9.43" required oninvalid="this.setCustomValidity('Enter third parameters two decimal places!')" 
+        a : <input title ="a" class="V" type="number" min=0.01 step="0.01" size="50" id="a" name="a" placeholder="23, 0.43" required oninvalid="this.setCustomValidity('Enter third parameters two decimal places!')" 
         oninput="this.setCustomValidity('')"> <br><br>
 
         <!-- добавл€ем поле дл€ ввода параметра n (количество проведенных испытаний), использу€ паттерн-->

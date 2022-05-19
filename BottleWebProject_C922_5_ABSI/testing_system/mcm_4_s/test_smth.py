@@ -3,22 +3,23 @@ import mcm_4
 
 class TestUM(unittest.TestCase):
 
-    def test_A(self):
+    # checking the correctness of the calculation of the time of receipt of applications
+    def test_application_receipt_1(self):
         self.assertEqual(mcm_4.moment_of_receipt_of_the_application(0.32,32,23), 23.036)
 
-    def test_B(self):
+    def test_application_receipt_2(self):
         self.assertEqual(mcm_4.moment_of_receipt_of_the_application(0.24, 0.42, 2494), 2497.398)
 
-    def test_C(self):
-        self.assertEqual(mcm_4.moment_of_receipt_of_the_application(3289, 8429.32, -0.323), -0.324)
+    def test_application_receipt_3(self):
+        self.assertEqual(mcm_4.moment_of_receipt_of_the_application(3289, 8429.32, 0.323), -0.324)
 
 
-    # следующий тест
-    def test_a2(self):
-        self.assertEqual(mcm_4.link1([23.39,24.90,25.42,86.45],23,42), [23.39,24.90,25.42,86.45])
+    # checking the calculation of the end time of channel maintenance by different channels
+    def test_filling_channel_1(self):
+        self.assertEqual(mcm_4.filling_channel([23.39,24.90,25.42,86.45],23,42), [23.39,24.90,25.42,86.45])
 
-    def test_b2(self):
-        self.assertEqual(mcm_4.link1([43,245,53,25],89,38), [127,245,53,25])
+    def test_filling_channel_2(self):
+        self.assertEqual(mcm_4.filling_channel([43,245,53,25],89,38), [127,245,53,25])
 
 
     # следующий тест
