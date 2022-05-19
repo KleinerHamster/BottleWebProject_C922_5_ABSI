@@ -10,7 +10,7 @@
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>D:\Учеба\Отчеты\6 семестр\УП_послеееедний\BottleWebProject_C922_5_ABSI\BottleWebProject_C922_5_ABSI\testing_system\mcm_4_s\.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -22,6 +22,7 @@
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>C:\Users\Anya\Source\Repos\BottleWebProject_C922_5_ABSI_Part5\BottleWebProject_C922_5_ABSI\testing_system\mcm_3_2_a\</UnitTestRootDirectory>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
