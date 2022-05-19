@@ -15,19 +15,19 @@ def filling_channel(list_link, ti, t1):
     
     return list_link
 
-
-def count_of_link(list_link):
+# the application has been serviced or refused
+def request_counter(list_link):
     for link in list_link:
         if link:
             return True
         else:
             return False
 
-
+# checking the calculation of the mathematical expectation (the average value of all tests performed)
 def check_result(list_result):
     a=0                                                                                                                                                                                                                                                                 
     for result in list_result:
         a+=result
     a/=len(list_result)
 
-    return a
+    return round(a,3)
