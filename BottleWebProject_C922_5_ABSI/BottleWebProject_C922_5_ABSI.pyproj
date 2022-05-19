@@ -10,7 +10,7 @@
     <StartupFile>app.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>D:\Учеба\Отчеты\6 семестр\УП_послеееедний\BottleWebProject_C922_5_ABSI\BottleWebProject_C922_5_ABSI\testing_system\mcm_4_s\.</WorkingDirectory>
+    <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env4|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>C:\Users\Anya\Source\Repos\BottleWebProject_C922_5_ABSI_Part5\BottleWebProject_C922_5_ABSI\testing_system\mcm_3_2_a\</UnitTestRootDirectory>

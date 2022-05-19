@@ -6,7 +6,6 @@ class TestUM(unittest.TestCase):
     def test_A(self):
         self.assertEqual(mcm_4.moment_of_receipt_of_the_application(0.32,32,23), 23.036)
 
-    # нужно ли делать с числами которых у нас заведомо не будет (например, -1?)
     def test_B(self):
         self.assertEqual(mcm_4.moment_of_receipt_of_the_application(0.24, 0.42, 2494), 2497.398)
 
