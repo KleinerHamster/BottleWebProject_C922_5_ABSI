@@ -7,6 +7,7 @@ import json
 @post('/program_mcm_3_2_A', method='post')
 def my_form():
 
+    #taking values from a form
     A_str=request.forms.get('NUMBER_A')
     B_str=request.forms.get('NUMBER_B')
     C_str=request.forms.get('NUMBER_C')
@@ -14,6 +15,7 @@ def my_form():
     E_str=request.forms.get('NUMBER_E')
     N_str=request.forms.get('NUMBER_N')
 
+    #conversion to numeric values
     A=float(A_str)
     B=float(B_str)
     C=float(C_str)
@@ -21,14 +23,18 @@ def my_form():
     E=float(E_str)
     numberOfTests=int(N_str)
 
+    #class for filling in a table row
     class Rectangle():
+        #designer
         def __init__(self):
+            #initialization random values of elements
             self.numberA=round(random.uniform(0,1), 2)
             self.numberB=round(random.uniform(0,1), 2)
             self.numberC=round(random.uniform(0,1), 2)
             self.numberD=round(random.uniform(0,1), 2)
             self.numberE=round(random.uniform(0,1), 2)
 
+            #initialization values of elements after comparison
             self.resultA = ""
             self.resultB = ""
             self.resultC = ""
@@ -36,13 +42,16 @@ def my_form():
             self.resultE = ""
             self.conclusionAboutTheWorkElement()
 
+            #initializing block results
             self.blockOne = ""
             self.blockTwo = ""
             self.conclusionAboutTheWorkBlock()
 
+            #initialization of the system operation result
             self.systems = ""
             self.conclusionAboutTheWorkSystems()
 
+        #function-conclusion about the operation of the elements
         def conclusionAboutTheWorkElement(self):
             if(A > self.numberA):
                 self.resultA = "+"
@@ -69,6 +78,7 @@ def my_form():
             else:
                 self.resultE = "-"
 
+        #function-conclusion about the operation of the blocks
         def conclusionAboutTheWorkBlock(self):
             if(self.resultA=="-" and self.resultB=="-" and self.resultC=="-"):
                 self.blockOne = "-"
@@ -80,6 +90,7 @@ def my_form():
             else:
                 self.blockTwo = "+"
 
+        #function-conclusion about the operation of the system
         def conclusionAboutTheWorkSystems(self):
             if(self.blockOne == "+" and self.blockTwo == "+"):
                 self.systems = "+"
@@ -87,6 +98,7 @@ def my_form():
                 self.systems = "-"
 
     list = []
+    #filling the list with objects of the class
     for number in range(numberOfTests):
         rectangle = Rectangle()
         list.append(rectangle)
@@ -94,16 +106,19 @@ def my_form():
     p_star = 0
     p_star_counter = 0
 
+    #counting the number of properly working systems
     for number in range(numberOfTests):
         if(list[number].systems == "+"):
             p_star_counter=p_star_counter+1
 
+    #calculations of all major indicators
     p_star = p_star_counter/numberOfTests
     p1 = 1-(1-A)*(1-B)*(1-C)
     p2 = 1-(1-D)*(1-E)
     p = p1*p2
     p_pStar = abs(p-p_star)
 
+    #creating a table header by columns
     df = pd.DataFrame(columns=['Test number'
                                ,'Block'
                                ,'Random number A'
@@ -121,23 +136,7 @@ def my_form():
                                ])
     #df=df.set_index('Test number')
 
-    arrayForTxt=[]
-
-    for number in range(numberOfTests):
-        arrayForTxt.append([list[number].numberA
-                            ,list[number].numberB
-                            ,list[number].numberC
-                            ,list[number].numberD
-                            ,list[number].numberE
-                            ,list[number].resultA
-                            ,list[number].resultB
-                            ,list[number].resultC
-                            ,list[number].resultD
-                            ,list[number].resultE
-                            ,list[number].blockOne
-                            ,list[number].blockTwo
-                            ,list[number].systems])
-
+        #filling in the table with the first block
         df=df.append({
             'Test number':number+1
             ,'Block':"First"
@@ -155,6 +154,7 @@ def my_form():
             ,'Work of systems':list[number].systems
             }, ignore_index=True)
 
+        #filling in the table with the second block
         df=df.append({
             'Test number':""
             ,'Block':"Second"
@@ -172,8 +172,10 @@ def my_form():
             ,'Work of systems':""
             }, ignore_index=True)
 
+    #conversion to the appropriate extension
     html=df.to_html()
-    #create file and fullfill it
+
+    #create file and fill in it
     with open('mcm_3_2.html', 'a', encoding="utf-8") as outfile:
         outfile.write(template('template_saving_ak'
                     , A_str=A_str
@@ -189,6 +191,7 @@ def my_form():
                     , p_pStar=p_pStar
                     , html=html))
 
+    #returning the template
     return template('template_ak'
                     , A_str=A_str
                     , B_str=B_str
@@ -203,7 +206,3 @@ def my_form():
                     , p_pStar=p_pStar
                     , html=html,
                     button_back='/mcm_system_reliability_3_2')
-
-    #return html
-    #return "<p>"+str(numberOfTests)+"</p><p>"+str(A)+"</p><p>"+str(p_star)+"</p><p>"+str(p1)+"</p><p>"+str(p2)+"</p><p>"+str(p)+"</p><p>"+str(p_pStar)+"</p><table border='1'><caption>tabliza razmerov obuvi</caption><tr><th>Russia</th><th>Greate Britain</th><th>Eroupe</th><th>Dlina stupni, sm</th></tr><tr><td>"+str(p)+"</td><td>"+str(p)+"</td><td>36</td><td>23</td></tr></table>"
-    
