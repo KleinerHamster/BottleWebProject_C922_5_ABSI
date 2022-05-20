@@ -1,3 +1,4 @@
+
 def conclusionAboutTheWorkElement(A,B,C,D,E
                                   ,numberA,numberB,numberC,numberD,numberE):
     arrayResults=[]

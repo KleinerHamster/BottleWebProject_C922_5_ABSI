@@ -136,41 +136,41 @@ def my_form():
                                ])
     #df=df.set_index('Test number')
 
-        #filling in the table with the first block
-        df=df.append({
-            'Test number':number+1
-            ,'Block':"First"
-            ,'Random number A':list[number].numberA
-            ,'Random number B':list[number].numberB
-            ,'Random number C':list[number].numberC
-            ,'Random number D':""
-            ,'Random number E':""
-            ,'Element A':list[number].resultA
-            ,'Element B':list[number].resultB
-            ,'Element C':list[number].resultC
-            ,'Element D':""
-            ,'Element E':""
-            ,'Work of blocks':list[number].blockOne
-            ,'Work of systems':list[number].systems
-            }, ignore_index=True)
+    #filling in the table with the first block
+    df=df.append({
+        'Test number':number+1
+        ,'Block':"First"
+        ,'Random number A':list[number].numberA
+        ,'Random number B':list[number].numberB
+        ,'Random number C':list[number].numberC
+        ,'Random number D':""
+        ,'Random number E':""
+        ,'Element A':list[number].resultA
+        ,'Element B':list[number].resultB
+        ,'Element C':list[number].resultC
+        ,'Element D':""
+        ,'Element E':""
+        ,'Work of blocks':list[number].blockOne
+        ,'Work of systems':list[number].systems
+        }, ignore_index=True)
 
-        #filling in the table with the second block
-        df=df.append({
-            'Test number':""
-            ,'Block':"Second"
-            ,'Random number A':""
-            ,'Random number B':""
-            ,'Random number C':""
-            ,'Random number D':list[number].numberD
-            ,'Random number E':list[number].numberE
-            ,'Element A':""
-            ,'Element B':""
-            ,'Element C':""
-            ,'Element D':list[number].resultD
-            ,'Element E':list[number].resultE
-            ,'Work of blocks':list[number].blockTwo
-            ,'Work of systems':""
-            }, ignore_index=True)
+    #filling in the table with the second block
+    df=df.append({
+        'Test number':""
+        ,'Block':"Second"
+        ,'Random number A':""
+        ,'Random number B':""
+        ,'Random number C':""
+        ,'Random number D':list[number].numberD
+        ,'Random number E':list[number].numberE
+        ,'Element A':""
+        ,'Element B':""
+        ,'Element C':""
+        ,'Element D':list[number].resultD
+        ,'Element E':list[number].resultE
+        ,'Work of blocks':list[number].blockTwo
+        ,'Work of systems':""
+        }, ignore_index=True)
 
     #conversion to the appropriate extension
     html=df.to_html()
