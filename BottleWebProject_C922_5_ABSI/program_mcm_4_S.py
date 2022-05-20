@@ -175,6 +175,17 @@ def my_form():
     html_table_of_test=df1.to_html()
     html=df.to_html()
 
+    #create file and fullfill it
+    with open('mcm_4.html', 'a') as outfile:
+        outfile.write(template('template_saving_sv'
+                    , t1=request.forms.get('t1')
+                    , t2=request.forms.get('t2')
+                    , a=request.forms.get('a')
+                    , N=request.forms.get('n')
+                    , number_mcm=4, time=t2, total_count=total_count, number_of_requests_served=all_numbers_of_requests_served[0]
+                    , all_tests=count_of_tests-1, html1=html_table_of_test, result=round(result,3)
+                    , html=html))
+
     return template('template_sv', number_mcm=4, time=t2, total_count=total_count, number_of_requests_served=all_numbers_of_requests_served[0],
                     all_tests=count_of_tests-1, html1=html_table_of_test, result=round(result,3), button_back='\mcm_estimating_failure_probilities_4',html=html)
 

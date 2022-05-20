@@ -173,10 +173,21 @@ def my_form():
             }, ignore_index=True)
 
     html=df.to_html()
-
-    with open('mcm_3_2.txt', 'a') as outfile:
-        outfile.write("\n"+"P*|"+str(p_star)+"\n"+"P1|"+str(p1)+"\n"+"P2|"+str(p2)+"\n"+"P|"+str(p)+"\n"+"PABS|"+str(p_pStar)+"\n")
-        json.dump(arrayForTxt, outfile)
+    #create file and fullfill it
+    with open('mcm_3_2.html', 'a') as outfile:
+        outfile.write(template('template_saving_ak'
+                    , A_str=A_str
+                    , B_str=B_str
+                    , C_str=C_str
+                    , D_str=D_str
+                    , E_str=E_str
+                    , N_str=N_str
+                    , p_star=p_star
+                    , p1=p1
+                    , p2=p2
+                    , p=p
+                    , p_pStar=p_pStar
+                    , html=html))
 
     return template('template_ak'
                     , A_str=A_str

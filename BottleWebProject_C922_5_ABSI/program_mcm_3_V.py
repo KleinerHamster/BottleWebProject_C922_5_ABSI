@@ -143,6 +143,16 @@ def my_form():
     # html table
     html_table_of_test=df1.to_html()
     html=df.to_html()
+    #create file and fullfill it
+    with open('mcm_3.html', 'a') as outfile:
+        outfile.write(template('template_saving_sv'
+                    , t1=request.forms.get('NUMBER_t1')
+                    , t2=request.forms.get('NUMBER_t2')
+                    , a=request.forms.get('NUMBER_a')
+                    , N=request.forms.get('NUMBER_N')
+                    , number_mcm=3, time=t2, total_count=count_test, number_of_requests_served=all_numbers_of_requests_served[0]
+                    , all_tests=all_tests-1, result=round(result,3), html1=html_table_of_test
+                    , html=html))
 
     return template('template_sv', number_mcm=3, time=t2, total_count=count_test, number_of_requests_served=all_numbers_of_requests_served[0],
                     all_tests=all_tests-1, result=round(result,3), html1=html_table_of_test, button_back='\mcm_estimating_failure_probilities_3',html=html)

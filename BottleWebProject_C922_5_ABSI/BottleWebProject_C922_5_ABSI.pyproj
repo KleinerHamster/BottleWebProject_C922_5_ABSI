@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env3|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
     <UnitTestRootDirectory>.</UnitTestRootDirectory>
@@ -187,6 +187,12 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\template_ak.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\template_saving_ak.tpl">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\template_saving_sv.tpl">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\template_sv.tpl">

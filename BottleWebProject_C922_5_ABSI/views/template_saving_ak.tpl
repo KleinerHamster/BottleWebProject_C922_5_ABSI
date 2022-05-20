@@ -1,7 +1,6 @@
-%rebase('layout.tpl', title='mcm_system_reliability', year=2022)
+<br><img src="static\images\home\logo.png" alt="logo" style="width:80px;height:28px;">
 <!--Заголовок страницы - верхушка-->
 <div>
-    <p><br></p>
     <!-- добавляем текст - заговок страницы-->
     <headerParagraphAbout class="A">Evaluation of the reliability of the simplest systems by the Monte Carlo method<br></headerParagraphAbout>
     <!--Разделяем на абзацы-->
@@ -29,7 +28,6 @@
     </tr>
 </table>
 
-
 <hr></hr>
 
 <table class="tbV"><!--Таблица-->
@@ -51,17 +49,21 @@
 </table>
 
 <!--Разделяем на абзацы-->
-    <hr></hr>
-	<headerA1>Would you like to back? <a class="buttonV1" href={{button_back}}>Back</a></headerA1><br><br>
-	<!--Разделяем на абзацы-->
-    <hr></hr>
-
+<hr></hr>
 
 <headerMCM32>Test results:</headerMCM32>
 
 <!--Таблица с первого теста-->
 {{!html}}
 
+%import datetime
+%today = datetime.datetime.today()
+%printToday = today.strftime("%H:%M:%S %d.%m.%Y")
+
 <!--Разделяем на абзацы-->
-<p><br></p>
 <hr class="about"></hr>
+<div class="container body-content">
+    <footer>
+        <pEnd>&copy; {{printToday}} - KVAS Corporation</pEnd>
+    </footer>
+</div>
