@@ -9,7 +9,7 @@ def moment_of_receipt_of_the_application(random_number, a, t1):
 # checking the calculation of the end time of channel maintenance by different channels
 def filling_channel(list_link, ti, t1):
     for i in range(len(list_link)):
-        if ti>list_link[i]:
+        if ti>=list_link[i]:
            list_link[i]=round(ti+t1,3) 
            break
     

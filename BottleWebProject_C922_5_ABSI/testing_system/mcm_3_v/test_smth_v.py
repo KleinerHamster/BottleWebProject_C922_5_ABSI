@@ -29,10 +29,9 @@ class TestUM(unittest.TestCase):
     def test_filling_channel_3(self):
         self.assertEqual(mcm_3.filling_channel([231.146, 231.197,231.197],242.612,0.42), [243.032, 231.197,231.197])
 
-    # question?
     def test_filling_channel_4(self):
         self.assertEqual(mcm_3.filling_channel([0,0,0,0],0.01,0.4), [0.41,0,0,0])
-    # question?
+
     def test_filling_channel_5(self):
         self.assertEqual(mcm_3.filling_channel([89.53,98,24,85],10,98), [89.53,98,24,85])
 
