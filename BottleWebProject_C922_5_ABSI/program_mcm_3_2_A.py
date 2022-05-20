@@ -174,7 +174,7 @@ def my_form():
 
     html=df.to_html()
     #create file and fullfill it
-    with open('mcm_3_2.html', 'a') as outfile:
+    with open('mcm_3_2.html', 'a', encoding="utf-8") as outfile:
         outfile.write(template('template_saving_ak'
                     , A_str=A_str
                     , B_str=B_str
