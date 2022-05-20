@@ -77,12 +77,21 @@ def my_form():
     p_absolutly=round(fabs(P_-P), 4)
     #table formatting in html format
     html=data_frame.to_html()
-    with open('mcm_2_3_K.txt', 'a') as outfile:#opening the file
-        json.dump(array_probability, outfile)#source data array entry
-        outfile.write("\n")#for a beautiful output
-        json.dump(array, outfile)#record array with intermediate results
-        outfile.write("\n")#for a beautiful output
-        #return the values required to display on the page
+    with open('mcm_2_3.html', 'a',encoding="utf-8") as outfile:
+        outfile.write(template( 'template_saving_ak'#writing template to html file
+                    , A_str=a_probability
+                    , B_str=b_probability
+                    , C_str=c_probability
+                    , D_str=d_probability
+                    , E_str=e_probability
+                    , N_str=n
+                    , p_star=P
+                    , p1=P1
+                    , p2=P2
+                    , p=P_
+                    , p_pStar=p_absolutly
+                    , html=html))
+
     return template('template_ak'
                     , A_str=a_probability
                     , B_str=b_probability
