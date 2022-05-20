@@ -28,28 +28,28 @@ After 100 tests, the Monte Carlo method is used to find an estimate of the P * r
         <br><headerA1>Enter your data:<br>
 
         <!-- добавл€ем текстовое поле дл€ первого блока, использу€ паттерн-->
-        <input  title="Block A" type="number" class="K" step="0.01" size="10" name="A" placeholder="A" min="0" max="1" required oninvalid="this.setcustomvalidity('enter first parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')"> 
+        <input  title="Block A" type="number" class="K" step="0.01" size="10" name="A" placeholder="A" min="0" max="1" required oninvalid="this.setCustomValidity('Enter the first parameter two decimal places of!')" 
+        oninput="this.setCustomValidity('')"> 
 
         <!-- добавл€ем текстовое поле дл€ 2-ого блока, использу€ паттерн-->
-        <input title="Block B" type="number" class="K" step="0.01" size="10" name="B" placeholder="B" min="0" max="1" required oninvalid="this.setcustomvalidity('enter second parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')"><br><br>
+        <input title="Block B" type="number" class="K" step="0.01" size="10" name="B" placeholder="B" min="0" max="1" required oninvalid="this.setCustomValidity('Enter the second parameters two decimal places!')" 
+        oninput="this.setCustomValidity('')"><br><br>
 
         <!-- добавл€ем текстовое поле дл€ 3-го блока, использу€ паттерн-->
-        <input title="Block C" type="number" class="K" step="0.01" size="10"  name="C" placeholder="C" min="0" max="1" required oninvalid="this.setcustomvalidity('enter third parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')"> 
+        <input title="Block C" type="number" class="K" step="0.01" size="10"  name="C" placeholder="C" min="0" max="1" required oninvalid="this.setCustomValidity('Enter the third parameters two decimal places!')" 
+        oninput="this.setCustomValidity('')"> 
 
         <!-- добавл€ем текстовое поле дл€ 4-го блока, использу€ паттерн-->
-        <input title="Block D" type="number" class="K" step="0.01" size="10" name="D" placeholder="D" min="0" max="1" required oninvalid="this.setcustomvalidity('enter fourth parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')"><br><br>
+        <input title="Block D" type="number" class="K" step="0.01" size="10" name="D" placeholder="D" min="0" max="1" required oninvalid="this.setCustomValidity('Enter the fourth parameters two decimal places!')" 
+        oninput="this.setCustomValidity('')"><br><br>
 
          <!-- добавл€ем текстовое поле дл€ 5-го блока, использу€ паттерн-->
-        <input title="Block E" type="number" class="K" step="0.01" size="10" name="E" min="0" max="1" placeholder="E" required oninvalid="this.setcustomvalidity('enter fourth parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')">
+        <input title="Block E" type="number" class="K" step="0.01" size="10" name="E" min="0" max="1" placeholder="E" required oninvalid="this.setCustomValidity('Enter the fifth parameters two decimal places!')" 
+        oninput="this.setCustomValidity('')">
 
         <!-- добавл€ем текстовое поле дл€ кол-ва тествов, использу€ паттерн-->
-        <input title="Number of test" type="number" class="K" step="1" size="10" name="n" min="1" placeholder="n" required oninvalid="this.setcustomvalidity('enter fourth parameters two decimal places!')" 
-        oninput="this.setcustomvalidity('')"><br><br>
+        <input title="Number of test" type="number" class="K" step="1" size="10" name="n" min="1" placeholder="n" required oninvalid="this.setCustomValidity('Enter number of tests!')" 
+        oninput="this.setCustomValidity('')"><br><br>
 
         <!-- кнопка дл€ отправки-->
         <p><input type="submit" class="buttonS" value="send"></p>
