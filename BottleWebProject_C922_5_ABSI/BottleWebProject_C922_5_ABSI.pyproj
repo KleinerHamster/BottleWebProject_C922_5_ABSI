@@ -18,10 +18,10 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>BottleWebProject_C922_5_ABSI</Name>
     <RootNamespace>BottleWebProject_C922_5_ABSI</RootNamespace>
-    <InterpreterId>MSBuild|env2|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env7|$(MSBuildProjectFullPath)</InterpreterId>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>D:\Учеба\Отчеты\6 семестр\УП_послеееедний\BottleWebProject_C922_5_ABSI\BottleWebProject_C922_5_ABSI\testing_system\mcm_3_v\.</UnitTestRootDirectory>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
