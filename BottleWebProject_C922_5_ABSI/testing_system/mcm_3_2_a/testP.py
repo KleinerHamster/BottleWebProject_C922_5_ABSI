@@ -15,6 +15,14 @@ class P(unittest.TestCase):
         self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.p(0.694,0.896)
                          , 0.622)
 
+    def test4_P(self):
+        self.assertEqual(mcm3and2.p(0.356,0.764)
+                         , 0.272)
+
+    def test5_P(self):
+        self.assertEqual(mcm3and2.p(0.859,0.997)
+                         , 0.856)
+
 if __name__ == '__main__':
     unittest.main()
 

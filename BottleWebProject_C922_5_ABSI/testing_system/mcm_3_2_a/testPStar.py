@@ -15,6 +15,14 @@ class PStar(unittest.TestCase):
         self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.pStar(65,80)
                          , 0.812)
 
+    def test4_PStar(self):
+        self.assertEqual(mcm3and2.pStar(30,40)
+                         , 0.75)
+
+    def test5_PStar(self):
+        self.assertEqual(mcm3and2.pStar(5,8)
+                         , 0.625)
+
 if __name__ == '__main__':
     unittest.main()
 

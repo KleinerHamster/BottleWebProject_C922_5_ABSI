@@ -15,6 +15,14 @@ class PPStar(unittest.TestCase):
         self.assertEqual(testing_system.mcm_3_2_a.mcm3and2.p_pStar(0.69,0.699)
                          , 0.009)
 
+    def test4_PPStar(self):
+        self.assertEqual(mcm3and2.p_pStar(0.25,0.782)
+                         , 0.532)
+
+    def test5_PPStar(self):
+        self.assertEqual(mcm3and2.p_pStar(0.51,0.551)
+                         , 0.041)
+
 if __name__ == '__main__':
     unittest.main()
 

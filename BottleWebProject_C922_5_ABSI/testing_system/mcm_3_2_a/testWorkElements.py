@@ -18,6 +18,16 @@ class WorkElementsTest(unittest.TestCase):
                                                                 0.89,0.2,0.48,0.22,0.64)
                          , ["-","+","+","+","-"])
 
+    def test4_conclusionAboutTheWorkElement(self):
+        self.assertEqual(mcm3and2.conclusionAboutTheWorkElement(0.56,0.47,0.31,0.11,0.6,
+                                                                0.61,0.5,0.76,0.2,0.65)
+                         , ["-","-","-","-","-"])
+
+    def test5_conclusionAboutTheWorkElement(self):
+        self.assertEqual(mcm3and2.conclusionAboutTheWorkElement(0.75,0.34,0.42,0.59,0.97,
+                                                                0.7,0.12,0.4,0.12,0.95)
+                         , ["+","+","+","+","+"])
+
 if __name__ == '__main__':
     unittest.main()
 
