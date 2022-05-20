@@ -25,8 +25,9 @@ def my_form():
 
     #class for filling in a table row
     class Rectangle():
-        #designer
+        #designer 
         def __init__(self):
+
             #initialization random values of elements
             self.numberA=round(random.uniform(0,1), 2)
             self.numberB=round(random.uniform(0,1), 2)
@@ -107,7 +108,7 @@ def my_form():
     p_star_counter = 0
 
     #counting the number of properly working systems
-    for number in range(numberOfTests):
+    for number in range(numberOfTests):    
         if(list[number].systems == "+"):
             p_star_counter=p_star_counter+1
 
@@ -137,46 +138,49 @@ def my_form():
     #df=df.set_index('Test number')
 
     #filling in the table with the first block
-    df=df.append({
-        'Test number':number+1
-        ,'Block':"First"
-        ,'Random number A':list[number].numberA
-        ,'Random number B':list[number].numberB
-        ,'Random number C':list[number].numberC
-        ,'Random number D':""
-        ,'Random number E':""
-        ,'Element A':list[number].resultA
-        ,'Element B':list[number].resultB
-        ,'Element C':list[number].resultC
-        ,'Element D':""
-        ,'Element E':""
-        ,'Work of blocks':list[number].blockOne
-        ,'Work of systems':list[number].systems
-        }, ignore_index=True)
+    for number in range(numberOfTests):
+        
+        #filling in the table with the first block
+        df=df.append({
+            'Test number':number+1
+            ,'Block':"First"
+            ,'Random number A':list[number].numberA
+            ,'Random number B':list[number].numberB
+            ,'Random number C':list[number].numberC
+            ,'Random number D':""
+            ,'Random number E':""
+            ,'Element A':list[number].resultA
+            ,'Element B':list[number].resultB
+            ,'Element C':list[number].resultC
+            ,'Element D':""
+            ,'Element E':""
+            ,'Work of blocks':list[number].blockOne
+            ,'Work of systems':list[number].systems
+            }, ignore_index=True)
 
-    #filling in the table with the second block
-    df=df.append({
-        'Test number':""
-        ,'Block':"Second"
-        ,'Random number A':""
-        ,'Random number B':""
-        ,'Random number C':""
-        ,'Random number D':list[number].numberD
-        ,'Random number E':list[number].numberE
-        ,'Element A':""
-        ,'Element B':""
-        ,'Element C':""
-        ,'Element D':list[number].resultD
-        ,'Element E':list[number].resultE
-        ,'Work of blocks':list[number].blockTwo
-        ,'Work of systems':""
-        }, ignore_index=True)
+        #filling in the table with the second block
+        df=df.append({
+            'Test number':""
+            ,'Block':"Second"
+            ,'Random number A':""
+            ,'Random number B':""
+            ,'Random number C':""
+            ,'Random number D':list[number].numberD
+            ,'Random number E':list[number].numberE
+            ,'Element A':""
+            ,'Element B':""
+            ,'Element C':""
+            ,'Element D':list[number].resultD
+            ,'Element E':list[number].resultE
+            ,'Work of blocks':list[number].blockTwo
+            ,'Work of systems':""
+            }, ignore_index=True)
 
     #conversion to the appropriate extension
     html=df.to_html()
 
-    #create file and fill in it
-    with open('mcm_3_2.html', 'a', encoding="utf-8") as outfile:
+    #create file and fullfill it
+    with open('mcm_3_2.html', 'a') as outfile:
         outfile.write(template('template_saving_ak'
                     , A_str=A_str
                     , B_str=B_str
