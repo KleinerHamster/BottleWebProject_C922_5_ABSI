@@ -62,7 +62,7 @@ def my_form():
             for i in range(len(link)):
                 # if the time of receipt of the application is greater than the time of the end of 
                 # service of one of the channels, the application is received on this channel
-                if ti>link[i]:
+                if ti>=link[i]:
                     # the time of the end of the application service = the time of receipt of the application + 
                     # the time of the application service
                     link[i]=ti+t1
@@ -144,7 +144,7 @@ def my_form():
     html_table_of_test=df1.to_html()
     html=df.to_html()
     #create file and fullfill it
-    with open('mcm_3.html', 'a') as outfile:
+    with open('mcm_3.html', 'a', encoding="utf-8") as outfile:
         outfile.write(template('template_saving_sv'
                     , t1=request.forms.get('NUMBER_t1')
                     , t2=request.forms.get('NUMBER_t2')
