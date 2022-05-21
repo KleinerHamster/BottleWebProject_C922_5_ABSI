@@ -1,7 +1,4 @@
 from bottle import post, request, template
-from bottle import SimpleTemplate
-import json
-#import pandas as pd
 import random, math
 from math import fabs
 import pandas as pd
@@ -29,7 +26,6 @@ def my_form():
     n=request.forms.get('n')
     n=int(n)
     #recording of user data in an array for convenient formation in a file
-    array_probability=[float(a_probability),float(b_probability), float(c_probability), float(d_probability),float(e_probability)]
     data_frame=pd.DataFrame(columns=['#','Random number A','Random number B','Random number C', 'Random number D','Random number E','Block 1', 'Block 2', 'System'])
     a_random=0
     b_random=0
@@ -64,8 +60,6 @@ def my_form():
              c_block_2='+'#system work
              #adding intermediate data to the table
          data_frame=data_frame.append({'#':i,'Random number A':float(a_random),'Random number B':float(b_random),'Random number C':float(c_random), 'Random number D':float(d_random),'Random number E':float(e_random),'Block 1':c_block_1, 'Block 2':c_block_2, 'System':c_system}, ignore_index=True)
-         #adding intermediate data to the array for further convenient formation in a file
-         array.append([float(a_random),float(b_random),float(c_random), float(d_random),float(e_random),c_block_1, c_block_2, c_system])
     #P - system reliability assessment
     P=f/n
     #finding the probability of faultless operation of first and second blocks

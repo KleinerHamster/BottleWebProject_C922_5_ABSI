@@ -2128,3 +2128,655 @@
         <pEnd>&copy; 01:41:58 21.05.2022 - KVAS Corporation</pEnd>
     </footer>
 </div>
+<br><img src="static\images\home\logo.png" alt="logo" style="width:80px;height:28px;">
+<!--Çàãîëîâîê ñòðàíèöû - âåðõóøêà-->
+<div>
+    <!-- äîáàâëÿåì òåêñò - çàãîâîê ñòðàíèöû-->
+    <headerParagraphAbout class="A">Evaluation of the reliability of the simplest systems by the Monte Carlo method<br></headerParagraphAbout>
+    <!--Ðàçäåëÿåì íà àáçàöû-->
+    <hr >
+    </hr>
+</div>
+<!--Êîëè÷åñòâî ïðîâåäåííûõ òåñòîâ-->
+<headerMCM32>Number of tests: 10</headerMCM32>
+<table class="tbV"><!--Òàáëèöà -->
+
+    <caption><headerA1>Probabilities of elements:</headerA1></caption>
+    <tr><!--Øàïêà òàáëèöû-->
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr><!--ß÷åéêè äëÿ ââîäà -->
+        <td>0.8</td>
+        <td>0.9</td>
+        <td>0.85</td>
+        <td>0.7</td>
+        <td>0.78</td>
+    </tr>
+</table>
+
+<hr></hr>
+
+<table class="tbV"><!--Òàáëèöà-->
+    <caption><headerA1>Probability of uptime:</headerA1></caption>
+    <tr><!--Øàïêà òàáëèöû-->
+        <th>P*</th>
+        <th>P1</th>
+        <th>P2</th>
+        <th>P</th>
+        <th>|P-P*|</th>
+    </tr>
+    <tr><!--ß÷åéêè äëÿ ââîäà -->
+        <td>1.0</td>
+        <td>0.997</td>
+        <td>0.934</td>
+        <td>0.931</td>
+        <td>0.069</td>
+    </tr>
+</table>
+
+<!--Ðàçäåëÿåì íà àáçàöû-->
+<hr></hr>
+
+<headerMCM32>Test results:</headerMCM32>
+
+<!--Òàáëèöà ñ ïåðâîãî òåñòà-->
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test number</th>
+      <th>Block</th>
+      <th>Random number A</th>
+      <th>Random number B</th>
+      <th>Random number C</th>
+      <th>Random number D</th>
+      <th>Random number E</th>
+      <th>Element A</th>
+      <th>Element B</th>
+      <th>Element C</th>
+      <th>Element D</th>
+      <th>Element E</th>
+      <th>Work of blocks</th>
+      <th>Work of systems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>First</td>
+      <td>0.89</td>
+      <td>0.9</td>
+      <td>0.84</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.73</td>
+      <td>0.69</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>First</td>
+      <td>0.22</td>
+      <td>0.61</td>
+      <td>0.02</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.35</td>
+      <td>0.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>First</td>
+      <td>0.4</td>
+      <td>0.09</td>
+      <td>0.28</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.47</td>
+      <td>0.46</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>4</td>
+      <td>First</td>
+      <td>0.25</td>
+      <td>0.58</td>
+      <td>0.69</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.65</td>
+      <td>0.39</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>5</td>
+      <td>First</td>
+      <td>0.25</td>
+      <td>0.76</td>
+      <td>0.84</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.25</td>
+      <td>0.23</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>6</td>
+      <td>First</td>
+      <td>0.96</td>
+      <td>0.95</td>
+      <td>0.09</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.19</td>
+      <td>0.14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>7</td>
+      <td>First</td>
+      <td>0.3</td>
+      <td>0.01</td>
+      <td>0.43</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.31</td>
+      <td>0.76</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>8</td>
+      <td>First</td>
+      <td>0.39</td>
+      <td>0.73</td>
+      <td>0.4</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.52</td>
+      <td>0.87</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>9</td>
+      <td>First</td>
+      <td>0.33</td>
+      <td>0.47</td>
+      <td>0.15</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.58</td>
+      <td>0.34</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>10</td>
+      <td>First</td>
+      <td>0.83</td>
+      <td>0.42</td>
+      <td>0.45</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.55</td>
+      <td>0.06</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!--Ðàçäåëÿåì íà àáçàöû-->
+<hr class="about"></hr>
+<div class="container body-content">
+    <footer>
+        <pEnd>&copy; 13:41:56 21.05.2022 - KVAS Corporation</pEnd>
+    </footer>
+</div>
+<br><img src="static\images\home\logo.png" alt="logo" style="width:80px;height:28px;">
+<!--Çàãîëîâîê ñòðàíèöû - âåðõóøêà-->
+<div>
+    <!-- äîáàâëÿåì òåêñò - çàãîâîê ñòðàíèöû-->
+    <headerParagraphAbout class="A">Evaluation of the reliability of the simplest systems by the Monte Carlo method<br></headerParagraphAbout>
+    <!--Ðàçäåëÿåì íà àáçàöû-->
+    <hr >
+    </hr>
+</div>
+<!--Êîëè÷åñòâî ïðîâåäåííûõ òåñòîâ-->
+<headerMCM32>Number of tests: 4</headerMCM32>
+<table class="tbV"><!--Òàáëèöà -->
+
+    <caption><headerA1>Probabilities of elements:</headerA1></caption>
+    <tr><!--Øàïêà òàáëèöû-->
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+    </tr>
+    <tr><!--ß÷åéêè äëÿ ââîäà -->
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<hr></hr>
+
+<table class="tbV"><!--Òàáëèöà-->
+    <caption><headerA1>Probability of uptime:</headerA1></caption>
+    <tr><!--Øàïêà òàáëèöû-->
+        <th>P*</th>
+        <th>P1</th>
+        <th>P2</th>
+        <th>P</th>
+        <th>|P-P*|</th>
+    </tr>
+    <tr><!--ß÷åéêè äëÿ ââîäà -->
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+    </tr>
+</table>
+
+<!--Ðàçäåëÿåì íà àáçàöû-->
+<hr></hr>
+
+<headerMCM32>Test results:</headerMCM32>
+
+<!--Òàáëèöà ñ ïåðâîãî òåñòà-->
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test number</th>
+      <th>Block</th>
+      <th>Random number A</th>
+      <th>Random number B</th>
+      <th>Random number C</th>
+      <th>Random number D</th>
+      <th>Random number E</th>
+      <th>Element A</th>
+      <th>Element B</th>
+      <th>Element C</th>
+      <th>Element D</th>
+      <th>Element E</th>
+      <th>Work of blocks</th>
+      <th>Work of systems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>First</td>
+      <td>0.69</td>
+      <td>0.19</td>
+      <td>0.77</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.94</td>
+      <td>0.63</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>First</td>
+      <td>0.95</td>
+      <td>0.2</td>
+      <td>0.98</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.83</td>
+      <td>0.32</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3</td>
+      <td>First</td>
+      <td>0.67</td>
+      <td>0.92</td>
+      <td>0.49</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.41</td>
+      <td>0.86</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>4</td>
+      <td>First</td>
+      <td>0.36</td>
+      <td>0.01</td>
+      <td>0.91</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+      <td>Second</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.85</td>
+      <td>0.23</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!--Ðàçäåëÿåì íà àáçàöû-->
+<hr class="about"></hr>
+<div class="container body-content">
+    <footer>
+        <pEnd>&copy; 13:45:39 21.05.2022 - KVAS Corporation</pEnd>
+    </footer>
+</div>
