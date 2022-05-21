@@ -48,7 +48,7 @@
     <br>
     <headerMCM32>
         Number of tests: <!--ß÷åéêà äëÿ ââîäà -->
-        <input class="A" min="1" step="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+        <input class="A" min="1" step="1" min="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
     </headerMCM32>
     <p><br></p>
     <p><input type="submit" class="buttonA" value="Calculate"></p>
