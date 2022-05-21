@@ -25,17 +25,10 @@
         <div class="circular--portrait"> <img src="static\images\about\kama.jpeg" /> </div>
         <!--Основной текст об авторе-->
         <pAbout>
-            ThingWorx Mashup Builder with drag and drop function allows
-            developers and business users to quickly create multifunctional 
-            interactive applications, real-time dashboards, collaboration 
-            areas and mobile interfaces without using code for this.
-            <br>
-            The next-generation application build tool allows you to shorten 
-            the development time by creating high-quality, scalable, 
-            intelligent network applications, with which companies, in turn, 
-            will be able to provide customers with value-adding solutions 
-            faster, increasing their market share compared to new and 
-            existing competitors.
+            Kamilla Balaeva developed a page to solve the system reliability 2 and 3 thread using Monte Carlo methond, made saving data to html.
+            Awesome UML-diagramm creator. Kama made unittest for her challenging task for Simulation Modeling the system reliability 
+            2 and 3 thread using Monte Carlo methond. Kama made technical documentation. Kamilla came up with a design for here page.
+            Also wonderful algorithm for task maker. And just Kamilla is good person. 
         </pAbout> 
         <p><br></p>
       
@@ -60,13 +53,10 @@
 
          <!--Основной текст об авторе-->
         <pAbout>
-            The ThingWorxIoT business process management component of the Platform automates 
-            and manages events, processes and information exchange between physical devices, 
-            information systems and people. The ThingWorx Business Process Editor provides a 
-            powerful, but at the same time easy-to-use, visual design and editing of business 
-            processes to ensure control of information flows from important events. ThingWorx 
-            business process monitoring provides visualization of both current and historical 
-            activities, performance and forecasts.
+        Viktoria Ivashova made amazing fronted and design for fabulous web-site. Viktoria developed a page to solve the task of queueing system 
+        estimating failure probilities 3 thread using Monte Carlo methond, made saving data to html. Creator made unittest for her challenging task 
+        for simulation modeling the estimating failure probilities 3 thread using Monte Carlo methond. And she made algorithm for task.
+        And she is just sweet like honey.
         </pAbout>
         <p><br></p>
     </separateForText>
@@ -89,17 +79,10 @@
 
          <!--Основной текст об авторе-->
         <pAbout>
-            ThingWorx Mashup Builder with drag and drop function allows
-            developers and business users to quickly create multifunctional 
-            interactive applications, real-time dashboards, collaboration 
-            areas and mobile interfaces without using code for this.
-            <br>
-            The next-generation application build tool allows you to shorten 
-            the development time by creating high-quality, scalable, 
-            intelligent network applications, with which companies, in turn, 
-            will be able to provide customers with value-adding solutions 
-            faster, increasing their market share compared to new and 
-            existing competitors.
+            Anya Alexseeva developed a page to solve the task  of queueing system - system reliability 3 and 2 thread using Monte Carlo methond, made saving data to html 
+            using date time. Creator made unittest for her challenging task for Simulation Modeling the system reliability  3 and 2 thread using Monte Carlo methond.
+            She is master of UML-diagramms and algorithm.
+            And she is just seafarer to the boundless dreams of this world.
         </pAbout> 
         <p><br></p>
     </separateForText>
@@ -123,13 +106,10 @@
 
         <!--Основной текст об авторе-->
         <pAbout>
-            The ThingWorxIoT business process management component of the Platform automates 
-            and manages events, processes and information exchange between physical devices, 
-            information systems and people. The ThingWorx Business Process Editor provides a 
-            powerful, but at the same time easy-to-use, visual design and editing of business 
-            processes to ensure control of information flows from important events. ThingWorx 
-            business process monitoring provides visualization of both current and historical 
-            activities, performance and forecasts.
+            Sofia Snegova made amizing algorithm and wonderful UML-diagramms. She eveloped a page to solve the task  of queueing system
+            estimating failure probilities 4 thread using Monte Carlo methond, made saving data to html.Creator made unittest for her challenging task 
+            for simulation modeling the estimating failure probilities 4 thread using Monte Carlo methond. 
+           And just she makes divine cakes.
         </pAbout>
         <p><br></p>
     </separateForText>
