@@ -38,17 +38,17 @@
             <th>E</th>
        </tr>
        <tr><!--ß÷åéêè äëÿ ââîäà -->
-           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_A" size="10" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the first element!')" oninput="this.setCustomValidity('')"></td>
-           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_B" size="10" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the second element!')" oninput="this.setCustomValidity('')"></td>
-           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_C" size="10" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the third element!')" oninput="this.setCustomValidity('')"></td>
-           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_D" size="10" placeholder="0.7" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the fourth element!')" oninput="this.setCustomValidity('')"></td>
-           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_E" size="10" placeholder="0.78" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the fifth element!')" oninput="this.setCustomValidity('')"></td>
+           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_A" placeholder="0.8" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the first element!')" oninput="this.setCustomValidity('')"></td>
+           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_B" placeholder="0.9" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the second element!')" oninput="this.setCustomValidity('')"></td>
+           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_C" placeholder="0.85" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the third element!')" oninput="this.setCustomValidity('')"></td>
+           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_D" placeholder="0.7" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the fourth element!')" oninput="this.setCustomValidity('')"></td>
+           <td><input type="number" min="0" max="1" step="0.01" name="NUMBER_E" placeholder="0.78" required oninvalid="this.setCustomValidity('Enter the probability two decimal places of the fifth element!')" oninput="this.setCustomValidity('')"></td>
        </tr>
     </table>
     <br>
     <headerMCM32>
         Number of tests: <!--ß÷åéêà äëÿ ââîäà -->
-        <input class="A" min="1" step="1" min="1" size="5" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
+        <input class="A" min="1" step="1" min="1" type="number" name="NUMBER_N" placeholder="5" required oninvalid="this.setCustomValidity('Enter the number of tests!')" oninput="this.setCustomValidity('')">
     </headerMCM32>
     <p><br></p>
     <p><input type="submit" class="buttonA" value="Calculate"></p>
